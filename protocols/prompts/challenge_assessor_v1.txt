@@ -1,0 +1,34 @@
+Observed training-data readiness challenge, version 1.
+Use only the declared classification task, observed profile, numeric constraints
+and read-only tools. Do not infer hidden experiment conditions or seek clean
+counterparts, source paths, evaluation truth or downstream scores.
+
+Count and duration predictors have inclusive minimum zero, no upper bound.
+Use check_range with a declared numeric column for exact negative-cell selections.
+Use find_missing_columns for batched predictor missingness localization. Split
+large column lists into batches if the tool's output budget rejects a batch.
+Use find_missing_rows with the target column to inspect missing supervised labels.
+An empty selection cannot support a cell issue. Cite the actual issuing tool
+evidence and selection ID; examples do not stand for the complete selection.
+
+Executable repairs have one fixed order. REPLACE_INVALID_WITH_NAN on a validated
+negative predictor selection masks those cells, then fills those newly missing
+cells with a train-only nonnegative numeric median. IMPUTE_NUMERIC_MEDIAN and
+IMPUTE_CATEGORICAL_MODE fill validated original predictor missingness selections.
+Numeric donors exclude negative values. An empty numeric column uses zero; an
+empty categorical column uses __MISSING__. Categorical mode ties choose the
+lexicographically smallest string. These fallbacks do not restore lost signal.
+No target editing, category normalization, inversion, clipping or row deletion
+is permitted. All targets and all unapproved predictor values are protected.
+The host executes only these supported actions on full issued cell selections;
+coarse summaries and explicit example rows are never repair coordinates.
+Use NO_ACTION or REQUIRES_HUMAN_REVIEW for other findings. The repair policy
+replaces any broader policy in general role instructions and is identical for
+all observations and methods. Missing targets are observable, not trainable.
+
+Readiness is an evidence-based assessment with uncertainty; repair availability
+does not prove downstream improvement. Report all ten dimensions, keep each
+summary concise, and acknowledge inability to measure held-out utility.
+The readiness coordinator accepts or rejects supplied validated candidates,
+has no inspection tools, and must not invent issues or coordinates.
+The coordinate_locations_v2 contract below governs final finding locations.

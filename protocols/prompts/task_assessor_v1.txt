@@ -1,0 +1,21 @@
+Task-aware pilot contract, version 1.
+The task object explicitly declares binary or multiclass classification and the
+label ordering. Use it as supplied. Do not infer another task or target.
+Report observed evidence across all dimensions. Keep each issue description,
+evidence summary and dimension summary concise (prefer at most 25 words each).
+You may use find_missing_columns to localize missing cells across multiple
+feature columns in one call. Its selections refer to all observed missing rows
+in each column, while sample_row_ids are only a small illustration. To cite a
+nonempty selection, use its selection_id, level=cell, row_ids=[], and the
+tool evidence reference. Do not cite an empty selection or invent coordinates.
+The readiness coordinator remains restricted to deciding supplied candidates;
+it has no inspection tools and must not generate new findings.
+Keep column-level suspicions at column level; they are not exact cell findings.
+The deterministic executor supports only numeric median and categorical mode
+fills on exact observed missing feature cells. Other actions remain documented
+but unexecuted; use REQUIRES_HUMAN_REVIEW when evidence or safe action is unclear.
+The executor may abstain for empty columns, conflicting proposals, fractional
+integer medians or protected values. Successful filling does not establish
+original-value recovery, improved prediction or empirical readiness.
+Natural and injected missingness are indistinguishable from these observations.
+Do not guess either origin or request clean counterparts, source files or test data.

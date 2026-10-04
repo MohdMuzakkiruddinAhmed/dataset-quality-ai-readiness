@@ -1,0 +1,4590 @@
+{
+  "cases": [
+    {
+      "case": {
+        "family": "native",
+        "id": "C01",
+        "seed": null,
+        "severity": 0
+      },
+      "changed_cells": 0,
+      "critical": {
+        "all_predictors_unavailable": false,
+        "numeric_domain_violation": false,
+        "unusable_target": false
+      },
+      "eligible_cells": 3584456,
+      "input": {
+        "path": "artifacts/readiness_challenge_v1/C01/observed.csv",
+        "sha256": "3974ba0b39b3d27b242e2d1008bc07d33fbe3982cb7c7134f54a19d5116509db"
+      },
+      "predictions": {
+        "always_ready": "READY",
+        "multi_agent": null,
+        "rules": "REMEDIATE",
+        "single_llm": "REMEDIATE"
+      },
+      "primary_truth": {
+        "effects": {
+          "average_precision": {
+            "benefit": -0.0028191983805474496,
+            "loss": 0.0,
+            "recovery": null,
+            "residual_loss": 0.0028191983805474496
+          },
+          "macro_f1": {
+            "benefit": 0.0024670179320519514,
+            "loss": 0.0,
+            "recovery": null,
+            "residual_loss": -0.0024670179320519514
+          },
+          "roc_auc": {
+            "benefit": -0.001995199304217543,
+            "loss": 0.0,
+            "recovery": null,
+            "residual_loss": 0.001995199304217543
+          }
+        },
+        "label": "READY",
+        "reason": "all_signed_losses_within_tolerance_no_critical_issue"
+      },
+      "sensitivity_labels": {
+        "logistic_regression": "READY",
+        "random_forest": "READY",
+        "xgboost": "READY"
+      }
+    },
+    {
+      "case": {
+        "family": "predictor_missingness",
+        "id": "C02",
+        "seed": 2001,
+        "severity": 0.05
+      },
+      "changed_cells": 179222,
+      "critical": {
+        "all_predictors_unavailable": false,
+        "numeric_domain_violation": false,
+        "unusable_target": false
+      },
+      "eligible_cells": 3584456,
+      "input": {
+        "path": "artifacts/readiness_challenge_v1/C02/observed.csv",
+        "sha256": "69a924b55311e5815efa0983dcf0f62228b7dfd8de8ba0d3bf52156bc98e8e94"
+      },
+      "predictions": {
+        "always_ready": "READY",
+        "multi_agent": null,
+        "rules": "REMEDIATE",
+        "single_llm": null
+      },
+      "primary_truth": {
+        "effects": {
+          "average_precision": {
+            "benefit": -0.0025648041634303287,
+            "loss": 0.00038238170878585054,
+            "recovery": -6.7074446933514915,
+            "residual_loss": 0.0029471858722161792
+          },
+          "macro_f1": {
+            "benefit": 0.0028497092500946453,
+            "loss": -0.000929853873569253,
+            "recovery": null,
+            "residual_loss": -0.0037795631236638982
+          },
+          "roc_auc": {
+            "benefit": -0.001823432164942962,
+            "loss": -0.0003651432070879146,
+            "recovery": null,
+            "residual_loss": 0.0014582889578550473
+          }
+        },
+        "label": "READY",
+        "reason": "all_signed_losses_within_tolerance_no_critical_issue"
+      },
+      "sensitivity_labels": {
+        "logistic_regression": "READY",
+        "random_forest": "READY",
+        "xgboost": "READY"
+      }
+    },
+    {
+      "case": {
+        "family": "numeric_domain_negatives",
+        "id": "C03",
+        "seed": 2001,
+        "severity": 0.1
+      },
+      "changed_cells": 40931,
+      "critical": {
+        "all_predictors_unavailable": false,
+        "numeric_domain_violation": true,
+        "unusable_target": false
+      },
+      "eligible_cells": 409316,
+      "input": {
+        "path": "artifacts/readiness_challenge_v1/C03/observed.csv",
+        "sha256": "9740c157173fcc60d50626622843c07fe2b18b54208d682784ecc6e7a19a7783"
+      },
+      "predictions": {
+        "always_ready": "READY",
+        "multi_agent": "REMEDIATE",
+        "rules": "REMEDIATE",
+        "single_llm": "REMEDIATE"
+      },
+      "primary_truth": {
+        "effects": {
+          "average_precision": {
+            "benefit": -0.0026522708878198853,
+            "loss": 0.0008569766983833882,
+            "recovery": -3.094915991091897,
+            "residual_loss": 0.0035092475862032735
+          },
+          "macro_f1": {
+            "benefit": 0.0064660775652826685,
+            "loss": 0.004365583245493243,
+            "recovery": 1.4811486121488682,
+            "residual_loss": -0.0021004943197894255
+          },
+          "roc_auc": {
+            "benefit": -0.0017629723404961606,
+            "loss": 0.0005292305181014978,
+            "recovery": -3.3311993171150633,
+            "residual_loss": 0.0022922028585976584
+          }
+        },
+        "label": "REMEDIATE",
+        "reason": "safe_canonical_repair_meets_residual_and_recovery_limits"
+      },
+      "sensitivity_labels": {
+        "logistic_regression": "REMEDIATE",
+        "random_forest": "REMEDIATE",
+        "xgboost": "REMEDIATE"
+      }
+    },
+    {
+      "case": {
+        "family": "numeric_domain_negatives",
+        "id": "C04",
+        "seed": 2002,
+        "severity": 0.2
+      },
+      "changed_cells": 81863,
+      "critical": {
+        "all_predictors_unavailable": false,
+        "numeric_domain_violation": true,
+        "unusable_target": false
+      },
+      "eligible_cells": 409316,
+      "input": {
+        "path": "artifacts/readiness_challenge_v1/C04/observed.csv",
+        "sha256": "dee38aed750c010c5f217057e227a39ff68ec7507d24ee40f9d8a0396aa8a5a9"
+      },
+      "predictions": {
+        "always_ready": "READY",
+        "multi_agent": "REMEDIATE",
+        "rules": "REMEDIATE",
+        "single_llm": "REMEDIATE"
+      },
+      "primary_truth": {
+        "effects": {
+          "average_precision": {
+            "benefit": -0.000503189245492891,
+            "loss": 0.0031744281364666227,
+            "recovery": -0.15851335228302837,
+            "residual_loss": 0.0036776173819595137
+          },
+          "macro_f1": {
+            "benefit": 0.010679613177346448,
+            "loss": 0.007330006854208815,
+            "recovery": 1.4569717859423723,
+            "residual_loss": -0.0033496063231376327
+          },
+          "roc_auc": {
+            "benefit": 0.0010772088522519319,
+            "loss": 0.00340582815139423,
+            "recovery": 0.31628397099570604,
+            "residual_loss": 0.0023286192991422983
+          }
+        },
+        "label": "REMEDIATE",
+        "reason": "safe_canonical_repair_meets_residual_and_recovery_limits"
+      },
+      "sensitivity_labels": {
+        "logistic_regression": "REMEDIATE",
+        "random_forest": "REMEDIATE",
+        "xgboost": "REMEDIATE"
+      }
+    },
+    {
+      "case": {
+        "family": "all_predictors_missing",
+        "id": "C05",
+        "seed": 2001,
+        "severity": 1
+      },
+      "changed_cells": 3584456,
+      "critical": {
+        "all_predictors_unavailable": true,
+        "numeric_domain_violation": false,
+        "unusable_target": false
+      },
+      "eligible_cells": 3584456,
+      "input": {
+        "path": "artifacts/readiness_challenge_v1/C05/observed.csv",
+        "sha256": "df0175199bb93bdcbbc5e3b3e136160e9474bf295522c4887c3a95015d7bc20a"
+      },
+      "predictions": {
+        "always_ready": "READY",
+        "multi_agent": null,
+        "rules": "NOT_READY",
+        "single_llm": "NOT_READY"
+      },
+      "primary_truth": {
+        "effects": {
+          "average_precision": {
+            "benefit": 0.0,
+            "loss": 0.09982159385493432,
+            "recovery": 0.0,
+            "residual_loss": 0.09982159385493432
+          },
+          "macro_f1": {
+            "benefit": 0.0,
+            "loss": 0.014842676616640127,
+            "recovery": 0.0,
+            "residual_loss": 0.014842676616640127
+          },
+          "roc_auc": {
+            "benefit": 0.0,
+            "loss": 0.17032472447173008,
+            "recovery": 0.0,
+            "residual_loss": 0.17032472447173008
+          }
+        },
+        "label": "NOT_READY",
+        "reason": "severe_loss_without_acceptable_canonical_repair"
+      },
+      "sensitivity_labels": {
+        "logistic_regression": "NOT_READY",
+        "random_forest": "NOT_READY",
+        "xgboost": "NOT_READY"
+      }
+    },
+    {
+      "case": {
+        "family": "all_training_targets_missing",
+        "id": "C06",
+        "seed": 2001,
+        "severity": 1
+      },
+      "changed_cells": 79473,
+      "critical": {
+        "all_predictors_unavailable": false,
+        "numeric_domain_violation": false,
+        "unusable_target": true
+      },
+      "eligible_cells": 79473,
+      "input": {
+        "path": "artifacts/readiness_challenge_v1/C06/observed.csv",
+        "sha256": "af735d01a51c9909f83a1cbf3db661767ddc1d73a6a26fb6d39ef7a8c766bac2"
+      },
+      "predictions": {
+        "always_ready": "READY",
+        "multi_agent": "NOT_READY",
+        "rules": "NOT_READY",
+        "single_llm": "NOT_READY"
+      },
+      "primary_truth": {
+        "effects": {},
+        "label": "NOT_READY",
+        "reason": "unusable_supervised_target_or_verified_data_failure"
+      },
+      "sensitivity_labels": {
+        "logistic_regression": "NOT_READY",
+        "random_forest": "NOT_READY",
+        "xgboost": "NOT_READY"
+      }
+    }
+  ],
+  "attempts": {
+    "C01_multi_agent": {
+      "duration_seconds": 126.03476700000465,
+      "input_tokens": 168142,
+      "model_requests": 7,
+      "output_tokens": 5991,
+      "prediction": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_f14d33af084e48a8b90162269da81a84.json",
+        "sha256": "8d5dd5e5d4357b98ede810958d22fd85446f602444b446e1709ce9bfad508cff"
+      },
+      "status": "failed",
+      "tool_calls": 19,
+      "termination": "pre_request_guard"
+    },
+    "C01_single_llm": {
+      "duration_seconds": 67.41007119999267,
+      "input_tokens": 71905,
+      "model_requests": 3,
+      "output_tokens": 3078,
+      "prediction": "REMEDIATE",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_39665a965c514cdab5e3f9d582e0a22f.json",
+        "sha256": "1c6981df18e0cc2497ae1a2b3dcd74b0d32fbe87193eb7152ff1fc04e8fe28c3"
+      },
+      "status": "completed",
+      "tool_calls": 10
+    },
+    "C02_multi_agent": {
+      "duration_seconds": 128.4027395999874,
+      "input_tokens": 51140,
+      "model_requests": 2,
+      "output_tokens": 10574,
+      "prediction": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_f1206f62786d4ad79cd74be1875c3a57.json",
+        "sha256": "286a71ef10615c71276b7f9e5776b01f3d4a168718a09efcdff351f4f42dd3e6"
+      },
+      "status": "failed",
+      "tool_calls": 7,
+      "termination": "pre_request_guard"
+    },
+    "C02_single_llm": {
+      "duration_seconds": 129.39717219999875,
+      "input_tokens": 51304,
+      "model_requests": 2,
+      "output_tokens": 10632,
+      "prediction": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_49c210c918364ba8ab093e38e7f591d4.json",
+        "sha256": "f54544146aad9f308c8ee287b8f420f2d0d111364e1faadcd9bd69088679f688"
+      },
+      "status": "failed",
+      "tool_calls": 9,
+      "termination": "pre_request_guard"
+    },
+    "C03_multi_agent": {
+      "duration_seconds": 265.4393546000065,
+      "input_tokens": 184488,
+      "model_requests": 7,
+      "output_tokens": 14207,
+      "prediction": "REMEDIATE",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_d3f628d7157c4f66a9630c3ed7743fa7.json",
+        "sha256": "b68306214bde3736b988c7e2fd69397ae380eb26fd47ff34855bced51c9a2f5b"
+      },
+      "status": "completed",
+      "tool_calls": 19
+    },
+    "C03_single_llm": {
+      "duration_seconds": 59.272156000020914,
+      "input_tokens": 49807,
+      "model_requests": 2,
+      "output_tokens": 3761,
+      "prediction": "REMEDIATE",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_413a41878f2e4c32a22fc4b686b3b5f3.json",
+        "sha256": "734581c2213a97282a77e3b9b450876f0240dc623ca727573add621feb320ebd"
+      },
+      "status": "completed",
+      "tool_calls": 9
+    },
+    "C04_multi_agent": {
+      "duration_seconds": 257.64088540000375,
+      "input_tokens": 184969,
+      "model_requests": 7,
+      "output_tokens": 14644,
+      "prediction": "REMEDIATE",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_cd7a48d2f61c4f78a29e732d8f0fb78c.json",
+        "sha256": "15cf8ed46b332a1ed843ab2dbe65c4d3a05345cd452c737499cf15c70359988e"
+      },
+      "status": "completed",
+      "tool_calls": 19
+    },
+    "C04_single_llm": {
+      "duration_seconds": 70.83839509999962,
+      "input_tokens": 75755,
+      "model_requests": 3,
+      "output_tokens": 4188,
+      "prediction": "REMEDIATE",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_3308517580ac49a6906568b93cb2c56a.json",
+        "sha256": "027805cf66aeee815505840a41db91c6f4cd4d06a4a21384d31b5291a8b86dfc"
+      },
+      "status": "completed",
+      "tool_calls": 13
+    },
+    "C05_multi_agent": {
+      "duration_seconds": 270.1838340999966,
+      "input_tokens": 137555,
+      "model_requests": 6,
+      "output_tokens": 18977,
+      "prediction": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_6f892f66da074c168901eaac28e7c52d.json",
+        "sha256": "c2bb82b3e0d2a01ebcdd43618a29a4de9a7f5063b870040be4826c3a4720f679"
+      },
+      "status": "failed",
+      "tool_calls": 5,
+      "termination": "pre_request_guard"
+    },
+    "C05_single_llm": {
+      "duration_seconds": 46.536425899976166,
+      "input_tokens": 40360,
+      "model_requests": 2,
+      "output_tokens": 2172,
+      "prediction": "NOT_READY",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_b4dcbd2e032240a98432eadb20ed1d87.json",
+        "sha256": "de197ee774aa03a32c497315e90828b61057e7e086c348164f38db2a301bedbf"
+      },
+      "status": "completed",
+      "tool_calls": 3
+    },
+    "C06_multi_agent": {
+      "duration_seconds": 211.5520748999843,
+      "input_tokens": 198862,
+      "model_requests": 8,
+      "output_tokens": 11555,
+      "prediction": "NOT_READY",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_08937942dff648a2ad6bf7c0fff627a3.json",
+        "sha256": "23cc18b179d73bfa648e609ab779c784a1a917b1bb5e012b3c856f86d60a25e0"
+      },
+      "status": "completed",
+      "tool_calls": 15
+    },
+    "C06_single_llm": {
+      "duration_seconds": 48.14161989997956,
+      "input_tokens": 47449,
+      "model_requests": 2,
+      "output_tokens": 2710,
+      "prediction": "NOT_READY",
+      "record": {
+        "path": "results/raw/readiness_challenge_assessment_1aa1cf6df6bb4b6c8afec7f5c2418b4a.json",
+        "sha256": "c5c2458a84eee7aa5f81e5a2bed619d57e7ead8b1fa42dea52f84d1579c7ccd5"
+      },
+      "status": "completed",
+      "tool_calls": 4
+    }
+  },
+  "comparisons": {
+    "always_ready": {
+      "all_assigned_case_verified_success_rate": 0.3333333333333333,
+      "all_assigned_rate_interpretation": "Verified correct predictions divided by all six assigned cases; an abstained truth is unverified, not assigned a false readiness class.",
+      "all_attempt_success_rate_determinate": 0.3333333333333333,
+      "assigned_case_count": 6,
+      "class_coverage_evaluable": true,
+      "completed_prediction_denominators": {
+        "NOT_READY": 2,
+        "READY": 2,
+        "REMEDIATE": 2
+      },
+      "completed_predictions_on_determinate_truth": 6,
+      "confusion_matrix_completed": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "correct_predictions_with_determinate_truth": 2,
+      "failed_predictions_all_cases": 0,
+      "failed_predictions_on_determinate_truth": 0,
+      "label_order": [
+        "READY",
+        "REMEDIATE",
+        "NOT_READY"
+      ],
+      "macro_f1_completed_fixed_three_labels": 0.16666666666666666,
+      "per_class_all_attempt_success": {
+        "NOT_READY": 0.0,
+        "READY": 1.0,
+        "REMEDIATE": 0.0
+      },
+      "recall_completed": {
+        "NOT_READY": 0.0,
+        "READY": 1.0,
+        "REMEDIATE": 0.0
+      },
+      "truth_abstentions": 0,
+      "truth_coverage": 1.0,
+      "truth_denominators": {
+        "NOT_READY": 2,
+        "READY": 2,
+        "REMEDIATE": 2
+      }
+    },
+    "multi_agent": {
+      "all_assigned_case_verified_success_rate": 0.5,
+      "all_assigned_rate_interpretation": "Verified correct predictions divided by all six assigned cases; an abstained truth is unverified, not assigned a false readiness class.",
+      "all_attempt_success_rate_determinate": 0.5,
+      "assigned_case_count": 6,
+      "class_coverage_evaluable": true,
+      "completed_prediction_denominators": {
+        "NOT_READY": 1,
+        "READY": 0,
+        "REMEDIATE": 2
+      },
+      "completed_predictions_on_determinate_truth": 3,
+      "confusion_matrix_completed": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "correct_predictions_with_determinate_truth": 3,
+      "failed_predictions_all_cases": 3,
+      "failed_predictions_on_determinate_truth": 3,
+      "label_order": [
+        "READY",
+        "REMEDIATE",
+        "NOT_READY"
+      ],
+      "macro_f1_completed_fixed_three_labels": 0.6666666666666666,
+      "per_class_all_attempt_success": {
+        "NOT_READY": 0.5,
+        "READY": 0.0,
+        "REMEDIATE": 1.0
+      },
+      "recall_completed": {
+        "NOT_READY": 1.0,
+        "READY": null,
+        "REMEDIATE": 1.0
+      },
+      "truth_abstentions": 0,
+      "truth_coverage": 1.0,
+      "truth_denominators": {
+        "NOT_READY": 2,
+        "READY": 2,
+        "REMEDIATE": 2
+      }
+    },
+    "rules": {
+      "all_assigned_case_verified_success_rate": 0.6666666666666666,
+      "all_assigned_rate_interpretation": "Verified correct predictions divided by all six assigned cases; an abstained truth is unverified, not assigned a false readiness class.",
+      "all_attempt_success_rate_determinate": 0.6666666666666666,
+      "assigned_case_count": 6,
+      "class_coverage_evaluable": true,
+      "completed_prediction_denominators": {
+        "NOT_READY": 2,
+        "READY": 2,
+        "REMEDIATE": 2
+      },
+      "completed_predictions_on_determinate_truth": 6,
+      "confusion_matrix_completed": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "correct_predictions_with_determinate_truth": 4,
+      "failed_predictions_all_cases": 0,
+      "failed_predictions_on_determinate_truth": 0,
+      "label_order": [
+        "READY",
+        "REMEDIATE",
+        "NOT_READY"
+      ],
+      "macro_f1_completed_fixed_three_labels": 0.5555555555555555,
+      "per_class_all_attempt_success": {
+        "NOT_READY": 1.0,
+        "READY": 0.0,
+        "REMEDIATE": 1.0
+      },
+      "recall_completed": {
+        "NOT_READY": 1.0,
+        "READY": 0.0,
+        "REMEDIATE": 1.0
+      },
+      "truth_abstentions": 0,
+      "truth_coverage": 1.0,
+      "truth_denominators": {
+        "NOT_READY": 2,
+        "READY": 2,
+        "REMEDIATE": 2
+      }
+    },
+    "single_llm": {
+      "all_assigned_case_verified_success_rate": 0.6666666666666666,
+      "all_assigned_rate_interpretation": "Verified correct predictions divided by all six assigned cases; an abstained truth is unverified, not assigned a false readiness class.",
+      "all_attempt_success_rate_determinate": 0.6666666666666666,
+      "assigned_case_count": 6,
+      "class_coverage_evaluable": true,
+      "completed_prediction_denominators": {
+        "NOT_READY": 2,
+        "READY": 1,
+        "REMEDIATE": 2
+      },
+      "completed_predictions_on_determinate_truth": 5,
+      "confusion_matrix_completed": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "correct_predictions_with_determinate_truth": 4,
+      "failed_predictions_all_cases": 1,
+      "failed_predictions_on_determinate_truth": 1,
+      "label_order": [
+        "READY",
+        "REMEDIATE",
+        "NOT_READY"
+      ],
+      "macro_f1_completed_fixed_three_labels": 0.6,
+      "per_class_all_attempt_success": {
+        "NOT_READY": 1.0,
+        "READY": 0.0,
+        "REMEDIATE": 1.0
+      },
+      "recall_completed": {
+        "NOT_READY": 1.0,
+        "READY": 0.0,
+        "REMEDIATE": 1.0
+      },
+      "truth_abstentions": 0,
+      "truth_coverage": 1.0,
+      "truth_denominators": {
+        "NOT_READY": 2,
+        "READY": 2,
+        "REMEDIATE": 2
+      }
+    }
+  },
+  "signed_effects": [
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/diabetes_domains_94a09b2731c7416685d4356da2b19146.json",
+        "sha256": "9285a60f506e1a97f82ceb446a2c31eef698beacb6d0ac7f1b16837121498cc2"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.48465082561469225
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.659215928184671,
+      "record": {
+        "path": "results/raw/diabetes_domains_94a09b2731c7416685d4356da2b19146.json",
+        "sha256": "9285a60f506e1a97f82ceb446a2c31eef698beacb6d0ac7f1b16837121498cc2"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.659215928184671
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21131762327120723,
+      "record": {
+        "path": "results/raw/diabetes_domains_94a09b2731c7416685d4356da2b19146.json",
+        "sha256": "9285a60f506e1a97f82ceb446a2c31eef698beacb6d0ac7f1b16837121498cc2"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.21131762327120723
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_57a14f9d9c5b4ddcae92ea479f9f4fde.json",
+        "sha256": "cc030d944da23f179850a584188564bc5823e159395d540e65df49751360cb60"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0024670179320519514,
+      "signed_benefit": 0.0024670179320519514,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4871178435467442
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.659215928184671,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_57a14f9d9c5b4ddcae92ea479f9f4fde.json",
+        "sha256": "cc030d944da23f179850a584188564bc5823e159395d540e65df49751360cb60"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.001995199304217543,
+      "signed_benefit": -0.001995199304217543,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6572207288804535
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21131762327120723,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_57a14f9d9c5b4ddcae92ea479f9f4fde.json",
+        "sha256": "cc030d944da23f179850a584188564bc5823e159395d540e65df49751360cb60"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0028191983805474496,
+      "signed_benefit": -0.0028191983805474496,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.20849842489065978
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_5fc54558b27f4a498041763d8ebcd0a1.json",
+        "sha256": "723fcf81e5122e3463c0794cb34fdafaf0632fa5f84127f7b240c3e4f9fa978c"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0024670179320519514,
+      "signed_benefit": 0.0024670179320519514,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4871178435467442
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.659215928184671,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_5fc54558b27f4a498041763d8ebcd0a1.json",
+        "sha256": "723fcf81e5122e3463c0794cb34fdafaf0632fa5f84127f7b240c3e4f9fa978c"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.001995199304217543,
+      "signed_benefit": -0.001995199304217543,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6572207288804535
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21131762327120723,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_5fc54558b27f4a498041763d8ebcd0a1.json",
+        "sha256": "723fcf81e5122e3463c0794cb34fdafaf0632fa5f84127f7b240c3e4f9fa978c"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0028191983805474496,
+      "signed_benefit": -0.0028191983805474496,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.20849842489065978
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8cb938ee849d4fcb95a3fb450536df9e.json",
+        "sha256": "003096cdaa2ed8cca612ddbcb3198748f97630cb3683723b9b6192f1606d5e78"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.659215928184671,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8cb938ee849d4fcb95a3fb450536df9e.json",
+        "sha256": "003096cdaa2ed8cca612ddbcb3198748f97630cb3683723b9b6192f1606d5e78"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21131762327120723,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8cb938ee849d4fcb95a3fb450536df9e.json",
+        "sha256": "003096cdaa2ed8cca612ddbcb3198748f97630cb3683723b9b6192f1606d5e78"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/diabetes_domains_cd69e0f64548414abe0eb74b42500d70.json",
+        "sha256": "e0cff90b4b900ac160abc4138ce8e34f77282f3ab473fdaa3057235f7a6d148d"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6633396445961203,
+      "record": {
+        "path": "results/raw/diabetes_domains_cd69e0f64548414abe0eb74b42500d70.json",
+        "sha256": "e0cff90b4b900ac160abc4138ce8e34f77282f3ab473fdaa3057235f7a6d148d"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6633396445961203
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.2107995334318344,
+      "record": {
+        "path": "results/raw/diabetes_domains_cd69e0f64548414abe0eb74b42500d70.json",
+        "sha256": "e0cff90b4b900ac160abc4138ce8e34f77282f3ab473fdaa3057235f7a6d148d"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.2107995334318344
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3fbfa51bac1c425089914127235e0283.json",
+        "sha256": "aa676ec8b9b19afbddc77dfde886b7a23715fb5d559d18b3eaf85162d09c9c2a"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6633396445961203,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3fbfa51bac1c425089914127235e0283.json",
+        "sha256": "aa676ec8b9b19afbddc77dfde886b7a23715fb5d559d18b3eaf85162d09c9c2a"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0011721777089170882,
+      "signed_benefit": -0.0011721777089170882,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6621674668872032
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.2107995334318344,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3fbfa51bac1c425089914127235e0283.json",
+        "sha256": "aa676ec8b9b19afbddc77dfde886b7a23715fb5d559d18b3eaf85162d09c9c2a"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.003725529234244629,
+      "signed_benefit": -0.003725529234244629,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.20707400419758978
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_210caa0f599c41f3b05449bf2a05b338.json",
+        "sha256": "6336c923fffc7aa5969ab96b71ffe84742d05eef8d67024a330365646e966033"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6633396445961203,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_210caa0f599c41f3b05449bf2a05b338.json",
+        "sha256": "6336c923fffc7aa5969ab96b71ffe84742d05eef8d67024a330365646e966033"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0011721777089170882,
+      "signed_benefit": -0.0011721777089170882,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6621674668872032
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.2107995334318344,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_210caa0f599c41f3b05449bf2a05b338.json",
+        "sha256": "6336c923fffc7aa5969ab96b71ffe84742d05eef8d67024a330365646e966033"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.003725529234244629,
+      "signed_benefit": -0.003725529234244629,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.20707400419758978
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4b4721e0697f430c800b3068e7b86d7c.json",
+        "sha256": "67ec267a8a0e1074d216c4e857fa33be82bbb9ab790f1f825421f2cea65aee72"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6633396445961203,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4b4721e0697f430c800b3068e7b86d7c.json",
+        "sha256": "67ec267a8a0e1074d216c4e857fa33be82bbb9ab790f1f825421f2cea65aee72"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.2107995334318344,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4b4721e0697f430c800b3068e7b86d7c.json",
+        "sha256": "67ec267a8a0e1074d216c4e857fa33be82bbb9ab790f1f825421f2cea65aee72"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48404568074223825,
+      "record": {
+        "path": "results/raw/diabetes_domains_16ad26d7e7da4b7c99e0789f25b636f2.json",
+        "sha256": "afad52c5881c649b4e7b5a24f7a054a6f65490ccf415f170bc36a9c302e5c50d"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.48404568074223825
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6678400239570486,
+      "record": {
+        "path": "results/raw/diabetes_domains_16ad26d7e7da4b7c99e0789f25b636f2.json",
+        "sha256": "afad52c5881c649b4e7b5a24f7a054a6f65490ccf415f170bc36a9c302e5c50d"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6678400239570486
+    },
+    {
+      "arm": "observed",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2234903610997722,
+      "record": {
+        "path": "results/raw/diabetes_domains_16ad26d7e7da4b7c99e0789f25b636f2.json",
+        "sha256": "afad52c5881c649b4e7b5a24f7a054a6f65490ccf415f170bc36a9c302e5c50d"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.2234903610997722
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48404568074223825,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_48a1621bfa814a5a8fa0837c03019098.json",
+        "sha256": "25fc6b5ee897c55a8f1e9a3d79295d00b35896ac949f7927c741e279a66e7fb0"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.0026088980509060833,
+      "signed_benefit": -0.0026088980509060833,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.48143678269133217
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6678400239570486,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_48a1621bfa814a5a8fa0837c03019098.json",
+        "sha256": "25fc6b5ee897c55a8f1e9a3d79295d00b35896ac949f7927c741e279a66e7fb0"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.0030681666826914977,
+      "signed_benefit": -0.0030681666826914977,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6647718572743571
+    },
+    {
+      "arm": "rules",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2234903610997722,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_48a1621bfa814a5a8fa0837c03019098.json",
+        "sha256": "25fc6b5ee897c55a8f1e9a3d79295d00b35896ac949f7927c741e279a66e7fb0"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.007899916445114313,
+      "signed_benefit": -0.007899916445114313,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.21559044465465788
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48404568074223825,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3406c258985e418ba8f606a205ed45ba.json",
+        "sha256": "8a7cdcbde345cff502a8e45bb4a7e6e0b140f9f9410c8be1c9cdb4f34e78d903"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.0026088980509060833,
+      "signed_benefit": -0.0026088980509060833,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.48143678269133217
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6678400239570486,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3406c258985e418ba8f606a205ed45ba.json",
+        "sha256": "8a7cdcbde345cff502a8e45bb4a7e6e0b140f9f9410c8be1c9cdb4f34e78d903"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.0030681666826914977,
+      "signed_benefit": -0.0030681666826914977,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.6647718572743571
+    },
+    {
+      "arm": "single_llm",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2234903610997722,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3406c258985e418ba8f606a205ed45ba.json",
+        "sha256": "8a7cdcbde345cff502a8e45bb4a7e6e0b140f9f9410c8be1c9cdb4f34e78d903"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.007899916445114313,
+      "signed_benefit": -0.007899916445114313,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.21559044465465788
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48404568074223825,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dac0f7eb07464cf284b49ff3b345b8e7.json",
+        "sha256": "be3b13f8c560558521bac3c6b9084e24c5eba0a7a7a67c5c6deacb6f620a4c89"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6678400239570486,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dac0f7eb07464cf284b49ff3b345b8e7.json",
+        "sha256": "be3b13f8c560558521bac3c6b9084e24c5eba0a7a7a67c5c6deacb6f620a4c89"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C01",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2234903610997722,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dac0f7eb07464cf284b49ff3b345b8e7.json",
+        "sha256": "be3b13f8c560558521bac3c6b9084e24c5eba0a7a7a67c5c6deacb6f620a4c89"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4855806794882615,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f98afa8ebe7d4a6bbd994e717cd4da12.json",
+        "sha256": "4ad12962db9ef3cfab84779f8443877115d7519c01d86511b07a8ce72fecc575"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.000929853873569253,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.000929853873569253,
+      "status": "completed",
+      "value": 0.4855806794882615
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6595810713917589,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f98afa8ebe7d4a6bbd994e717cd4da12.json",
+        "sha256": "4ad12962db9ef3cfab84779f8443877115d7519c01d86511b07a8ce72fecc575"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": -0.0003651432070879146,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.0003651432070879146,
+      "status": "completed",
+      "value": 0.6595810713917589
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21093524156242138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f98afa8ebe7d4a6bbd994e717cd4da12.json",
+        "sha256": "4ad12962db9ef3cfab84779f8443877115d7519c01d86511b07a8ce72fecc575"
+      },
+      "recovery": 0.0,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.00038238170878585054,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.00038238170878585054,
+      "status": "completed",
+      "value": 0.21093524156242138
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4855806794882615,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0c17ed5cb00641f398f264d865c173f6.json",
+        "sha256": "28b958030edf94fbb165f29c8633519ec6a75b7f4b98a0d4a334a33fafdb2597"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0037795631236638982,
+      "signed_benefit": 0.0028497092500946453,
+      "signed_loss": -0.000929853873569253,
+      "status": "completed",
+      "value": 0.48843038873835615
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6595810713917589,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0c17ed5cb00641f398f264d865c173f6.json",
+        "sha256": "28b958030edf94fbb165f29c8633519ec6a75b7f4b98a0d4a334a33fafdb2597"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0014582889578550473,
+      "signed_benefit": -0.001823432164942962,
+      "signed_loss": -0.0003651432070879146,
+      "status": "completed",
+      "value": 0.657757639226816
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21093524156242138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0c17ed5cb00641f398f264d865c173f6.json",
+        "sha256": "28b958030edf94fbb165f29c8633519ec6a75b7f4b98a0d4a334a33fafdb2597"
+      },
+      "recovery": -6.7074446933514915,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0029471858722161792,
+      "signed_benefit": -0.0025648041634303287,
+      "signed_loss": 0.00038238170878585054,
+      "status": "completed",
+      "value": 0.20837043739899105
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4855806794882615,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_856b8e85350a448cae4afc39ba5f7c13.json",
+        "sha256": "f2e3e1f3748215fe4afbf364b51b539fc60f9e7c4562faf30459bc2313820b12"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.000929853873569253,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6595810713917589,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_856b8e85350a448cae4afc39ba5f7c13.json",
+        "sha256": "f2e3e1f3748215fe4afbf364b51b539fc60f9e7c4562faf30459bc2313820b12"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.0003651432070879146,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21093524156242138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_856b8e85350a448cae4afc39ba5f7c13.json",
+        "sha256": "f2e3e1f3748215fe4afbf364b51b539fc60f9e7c4562faf30459bc2313820b12"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.00038238170878585054,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4855806794882615,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4a52daa5f5c54d2d80f059801c5a668f.json",
+        "sha256": "20a6288446a97dac9259c7e9aea64211422a67b978cc230ec0b7350a3f1e5700"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.000929853873569253,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6595810713917589,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4a52daa5f5c54d2d80f059801c5a668f.json",
+        "sha256": "20a6288446a97dac9259c7e9aea64211422a67b978cc230ec0b7350a3f1e5700"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.0003651432070879146,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21093524156242138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4a52daa5f5c54d2d80f059801c5a668f.json",
+        "sha256": "20a6288446a97dac9259c7e9aea64211422a67b978cc230ec0b7350a3f1e5700"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.00038238170878585054,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_d8f32b9ad25e45a38e7a8f229c74f116.json",
+        "sha256": "b7e4bb429031f40b38d4262959334dfe1bb52d03aa483bc8b42438fdd2625fa3"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.663745144547795,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_d8f32b9ad25e45a38e7a8f229c74f116.json",
+        "sha256": "b7e4bb429031f40b38d4262959334dfe1bb52d03aa483bc8b42438fdd2625fa3"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": -0.00040549995167471486,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.00040549995167471486,
+      "status": "completed",
+      "value": 0.663745144547795
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.20942034746615812,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_d8f32b9ad25e45a38e7a8f229c74f116.json",
+        "sha256": "b7e4bb429031f40b38d4262959334dfe1bb52d03aa483bc8b42438fdd2625fa3"
+      },
+      "recovery": 0.0,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.001379185965676294,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.001379185965676294,
+      "status": "completed",
+      "value": 0.20942034746615812
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4e698c50fd614357929618881cef3f40.json",
+        "sha256": "d82b3919dfe9a6122e31eb157cec737b8a45c821c29553215adf2eafffe1648f"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.663745144547795,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4e698c50fd614357929618881cef3f40.json",
+        "sha256": "d82b3919dfe9a6122e31eb157cec737b8a45c821c29553215adf2eafffe1648f"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0020261444945633977,
+      "signed_benefit": -0.0024316444462381126,
+      "signed_loss": -0.00040549995167471486,
+      "status": "completed",
+      "value": 0.6613135001015569
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.20942034746615812,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4e698c50fd614357929618881cef3f40.json",
+        "sha256": "d82b3919dfe9a6122e31eb157cec737b8a45c821c29553215adf2eafffe1648f"
+      },
+      "recovery": -3.139665458152261,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.0057093685024785235,
+      "signed_benefit": -0.0043301825368022295,
+      "signed_loss": 0.001379185965676294,
+      "status": "completed",
+      "value": 0.2050901649293559
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_5bb749dd22594180b3a03abf9ea247c9.json",
+        "sha256": "803eec3d41df631964ac24fbbee77221c65ff1efb8acf69ad3dddc566855f677"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.663745144547795,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_5bb749dd22594180b3a03abf9ea247c9.json",
+        "sha256": "803eec3d41df631964ac24fbbee77221c65ff1efb8acf69ad3dddc566855f677"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.00040549995167471486,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.20942034746615812,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_5bb749dd22594180b3a03abf9ea247c9.json",
+        "sha256": "803eec3d41df631964ac24fbbee77221c65ff1efb8acf69ad3dddc566855f677"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.001379185965676294,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_30ad66a32843464ab57d6ff3782c7f25.json",
+        "sha256": "7afffc96ab65a3c0e7b8a1396ffd54cf0c5042cf95d92de0620c30ca9a2c717f"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.663745144547795,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_30ad66a32843464ab57d6ff3782c7f25.json",
+        "sha256": "7afffc96ab65a3c0e7b8a1396ffd54cf0c5042cf95d92de0620c30ca9a2c717f"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.00040549995167471486,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.20942034746615812,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_30ad66a32843464ab57d6ff3782c7f25.json",
+        "sha256": "7afffc96ab65a3c0e7b8a1396ffd54cf0c5042cf95d92de0620c30ca9a2c717f"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.001379185965676294,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0dc5a8294dc14f389940f23751079d0f.json",
+        "sha256": "5d0d87bc16974b5e09504d407f9ea3d30e3c5b581c20b2d5c64d783dd07b1ba2"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": -0.0006051448724539998,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.0006051448724539998,
+      "status": "completed",
+      "value": 0.48465082561469225
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6676133309872211,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0dc5a8294dc14f389940f23751079d0f.json",
+        "sha256": "5d0d87bc16974b5e09504d407f9ea3d30e3c5b581c20b2d5c64d783dd07b1ba2"
+      },
+      "recovery": 0.0,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.0002266929698274689,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0002266929698274689,
+      "status": "completed",
+      "value": 0.6676133309872211
+    },
+    {
+      "arm": "observed",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.22257662055933955,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0dc5a8294dc14f389940f23751079d0f.json",
+        "sha256": "5d0d87bc16974b5e09504d407f9ea3d30e3c5b581c20b2d5c64d783dd07b1ba2"
+      },
+      "recovery": 0.0,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.0009137405404326393,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0009137405404326393,
+      "status": "completed",
+      "value": 0.22257662055933955
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f7fba2cd044d4cf7b168632089774fbd.json",
+        "sha256": "42f433568c7524f390cbf6f07f13c23df316027952c3dec24896590157a8aa7b"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.004332091277112593,
+      "signed_benefit": -0.004937236149566593,
+      "signed_loss": -0.0006051448724539998,
+      "status": "completed",
+      "value": 0.47971358946512566
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6676133309872211,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f7fba2cd044d4cf7b168632089774fbd.json",
+        "sha256": "42f433568c7524f390cbf6f07f13c23df316027952c3dec24896590157a8aa7b"
+      },
+      "recovery": -13.626017160255776,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.0033156152668059047,
+      "signed_benefit": -0.003088922296978436,
+      "signed_loss": 0.0002266929698274689,
+      "status": "completed",
+      "value": 0.6645244086902427
+    },
+    {
+      "arm": "rules",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.22257662055933955,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f7fba2cd044d4cf7b168632089774fbd.json",
+        "sha256": "42f433568c7524f390cbf6f07f13c23df316027952c3dec24896590157a8aa7b"
+      },
+      "recovery": -9.653662829356282,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.00973468363128313,
+      "signed_benefit": -0.008820943090850492,
+      "signed_loss": 0.0009137405404326393,
+      "status": "completed",
+      "value": 0.21375567746848906
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_da58985431d24ee0b05d8d8133c2d042.json",
+        "sha256": "45f51c73856d45d71cb6b34da8ac74296fcbd9a10b6534640d189ba53da2aeba"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.0006051448724539998,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6676133309872211,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_da58985431d24ee0b05d8d8133c2d042.json",
+        "sha256": "45f51c73856d45d71cb6b34da8ac74296fcbd9a10b6534640d189ba53da2aeba"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0002266929698274689,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.22257662055933955,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_da58985431d24ee0b05d8d8133c2d042.json",
+        "sha256": "45f51c73856d45d71cb6b34da8ac74296fcbd9a10b6534640d189ba53da2aeba"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0009137405404326393,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48465082561469225,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c79b454b3f1b45d5b28b30f08026f683.json",
+        "sha256": "6790d06b2fe8ebe2952e54ed7218c998fa0dcd81e0c9ddb91bf383eea7fba2fa"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": -0.0006051448724539998,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6676133309872211,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c79b454b3f1b45d5b28b30f08026f683.json",
+        "sha256": "6790d06b2fe8ebe2952e54ed7218c998fa0dcd81e0c9ddb91bf383eea7fba2fa"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0002266929698274689,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C02",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.22257662055933955,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c79b454b3f1b45d5b28b30f08026f683.json",
+        "sha256": "6790d06b2fe8ebe2952e54ed7218c998fa0dcd81e0c9ddb91bf383eea7fba2fa"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0009137405404326393,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.480285242369199,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_717a777a1c1a4ad196b89342fcc8825f.json",
+        "sha256": "c0a554128837870b3679be11ff4e0a0be8c93625e58e93606311a1a5019b3f66"
+      },
+      "recovery": 0.0,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.004365583245493243,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.004365583245493243,
+      "status": "completed",
+      "value": 0.480285242369199
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6586866976665695,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_717a777a1c1a4ad196b89342fcc8825f.json",
+        "sha256": "c0a554128837870b3679be11ff4e0a0be8c93625e58e93606311a1a5019b3f66"
+      },
+      "recovery": 0.0,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0005292305181014978,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0005292305181014978,
+      "status": "completed",
+      "value": 0.6586866976665695
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21046064657282385,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_717a777a1c1a4ad196b89342fcc8825f.json",
+        "sha256": "c0a554128837870b3679be11ff4e0a0be8c93625e58e93606311a1a5019b3f66"
+      },
+      "recovery": 0.0,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0008569766983833882,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0008569766983833882,
+      "status": "completed",
+      "value": 0.21046064657282385
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.480285242369199,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3f0299c17f5b4d1089b646165e21643f.json",
+        "sha256": "acedd4cac06a0499a2e89ba2b460760959c0ceec2e80d32e0b33bb7a457d0634"
+      },
+      "recovery": 1.4811486121488682,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0021004943197894255,
+      "signed_benefit": 0.0064660775652826685,
+      "signed_loss": 0.004365583245493243,
+      "status": "completed",
+      "value": 0.4867513199344817
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6586866976665695,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3f0299c17f5b4d1089b646165e21643f.json",
+        "sha256": "acedd4cac06a0499a2e89ba2b460760959c0ceec2e80d32e0b33bb7a457d0634"
+      },
+      "recovery": -3.3311993171150633,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0022922028585976584,
+      "signed_benefit": -0.0017629723404961606,
+      "signed_loss": 0.0005292305181014978,
+      "status": "completed",
+      "value": 0.6569237253260733
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21046064657282385,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3f0299c17f5b4d1089b646165e21643f.json",
+        "sha256": "acedd4cac06a0499a2e89ba2b460760959c0ceec2e80d32e0b33bb7a457d0634"
+      },
+      "recovery": -3.094915991091897,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0035092475862032735,
+      "signed_benefit": -0.0026522708878198853,
+      "signed_loss": 0.0008569766983833882,
+      "status": "completed",
+      "value": 0.20780837568500396
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.480285242369199,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f002748b086b4756ab6ab2e58a65fc51.json",
+        "sha256": "21c2af86e12a9986ad3042b3d4ce08f27eeba9e293304637ccc9c5c1a52e20bf"
+      },
+      "recovery": 1.4811486121488682,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0021004943197894255,
+      "signed_benefit": 0.0064660775652826685,
+      "signed_loss": 0.004365583245493243,
+      "status": "completed",
+      "value": 0.4867513199344817
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6586866976665695,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f002748b086b4756ab6ab2e58a65fc51.json",
+        "sha256": "21c2af86e12a9986ad3042b3d4ce08f27eeba9e293304637ccc9c5c1a52e20bf"
+      },
+      "recovery": -3.3311993171150633,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0022922028585976584,
+      "signed_benefit": -0.0017629723404961606,
+      "signed_loss": 0.0005292305181014978,
+      "status": "completed",
+      "value": 0.6569237253260733
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21046064657282385,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f002748b086b4756ab6ab2e58a65fc51.json",
+        "sha256": "21c2af86e12a9986ad3042b3d4ce08f27eeba9e293304637ccc9c5c1a52e20bf"
+      },
+      "recovery": -3.094915991091897,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0035092475862032735,
+      "signed_benefit": -0.0026522708878198853,
+      "signed_loss": 0.0008569766983833882,
+      "status": "completed",
+      "value": 0.20780837568500396
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.480285242369199,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f06ba315ac9848af8749a883bc85920a.json",
+        "sha256": "ee543ce2e2aa966fd691d89d65a81e52ed0ccff6e64eeb9069f31e5dff5488c6"
+      },
+      "recovery": 1.4811486121488682,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0021004943197894255,
+      "signed_benefit": 0.0064660775652826685,
+      "signed_loss": 0.004365583245493243,
+      "status": "completed",
+      "value": 0.4867513199344817
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6586866976665695,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f06ba315ac9848af8749a883bc85920a.json",
+        "sha256": "ee543ce2e2aa966fd691d89d65a81e52ed0ccff6e64eeb9069f31e5dff5488c6"
+      },
+      "recovery": -3.3311993171150633,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0022922028585976584,
+      "signed_benefit": -0.0017629723404961606,
+      "signed_loss": 0.0005292305181014978,
+      "status": "completed",
+      "value": 0.6569237253260733
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.21046064657282385,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f06ba315ac9848af8749a883bc85920a.json",
+        "sha256": "ee543ce2e2aa966fd691d89d65a81e52ed0ccff6e64eeb9069f31e5dff5488c6"
+      },
+      "recovery": -3.094915991091897,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0035092475862032735,
+      "signed_benefit": -0.0026522708878198853,
+      "signed_loss": 0.0008569766983833882,
+      "status": "completed",
+      "value": 0.20780837568500396
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_cfe2de9b49ab411ab1dbf4e49f77e589.json",
+        "sha256": "64f9ea4523bc77e425426cef7cf72035b27e451fdb381d0c48075ce2e2064ee5"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6629064621262367,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_cfe2de9b49ab411ab1dbf4e49f77e589.json",
+        "sha256": "64f9ea4523bc77e425426cef7cf72035b27e451fdb381d0c48075ce2e2064ee5"
+      },
+      "recovery": 0.0,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0004331824698835529,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0004331824698835529,
+      "status": "completed",
+      "value": 0.6629064621262367
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21371581659234246,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_cfe2de9b49ab411ab1dbf4e49f77e589.json",
+        "sha256": "64f9ea4523bc77e425426cef7cf72035b27e451fdb381d0c48075ce2e2064ee5"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": -0.002916283160508043,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.002916283160508043,
+      "status": "completed",
+      "value": 0.21371581659234246
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8287ea64d855482b8505d5eeb6d001ae.json",
+        "sha256": "04915972e94be30520a1c113aaadb2c620ede38196a92febbfd5a4993ec3c69e"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6629064621262367,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8287ea64d855482b8505d5eeb6d001ae.json",
+        "sha256": "04915972e94be30520a1c113aaadb2c620ede38196a92febbfd5a4993ec3c69e"
+      },
+      "recovery": 1.0477983777518387,
+      "reference": 0.6633396445961203,
+      "residual_loss": -2.070541933096859e-05,
+      "signed_benefit": 0.0004538878892145215,
+      "signed_loss": 0.0004331824698835529,
+      "status": "completed",
+      "value": 0.6633603500154512
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21371581659234246,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8287ea64d855482b8505d5eeb6d001ae.json",
+        "sha256": "04915972e94be30520a1c113aaadb2c620ede38196a92febbfd5a4993ec3c69e"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.0005794978405223306,
+      "signed_benefit": -0.0034957810010303736,
+      "signed_loss": -0.002916283160508043,
+      "status": "completed",
+      "value": 0.21022003559131208
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_b3cb9b84fe9a4da589b78086c1d054c4.json",
+        "sha256": "25fb64a604c6963f981dd547a9513fc7a0b516a9dd8164ff2bb6b59c412ebdb4"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6629064621262367,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_b3cb9b84fe9a4da589b78086c1d054c4.json",
+        "sha256": "25fb64a604c6963f981dd547a9513fc7a0b516a9dd8164ff2bb6b59c412ebdb4"
+      },
+      "recovery": 1.0477983777518387,
+      "reference": 0.6633396445961203,
+      "residual_loss": -2.070541933096859e-05,
+      "signed_benefit": 0.0004538878892145215,
+      "signed_loss": 0.0004331824698835529,
+      "status": "completed",
+      "value": 0.6633603500154512
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21371581659234246,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_b3cb9b84fe9a4da589b78086c1d054c4.json",
+        "sha256": "25fb64a604c6963f981dd547a9513fc7a0b516a9dd8164ff2bb6b59c412ebdb4"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.0005794978405223306,
+      "signed_benefit": -0.0034957810010303736,
+      "signed_loss": -0.002916283160508043,
+      "status": "completed",
+      "value": 0.21022003559131208
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_17a87413658040219f21e0db644ac84e.json",
+        "sha256": "fabb3fb20d8cc6c4747ff7088ab42f812fc26aa9c2a19ff595dc5d5d407cc882"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6629064621262367,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_17a87413658040219f21e0db644ac84e.json",
+        "sha256": "fabb3fb20d8cc6c4747ff7088ab42f812fc26aa9c2a19ff595dc5d5d407cc882"
+      },
+      "recovery": 1.0477983777518387,
+      "reference": 0.6633396445961203,
+      "residual_loss": -2.070541933096859e-05,
+      "signed_benefit": 0.0004538878892145215,
+      "signed_loss": 0.0004331824698835529,
+      "status": "completed",
+      "value": 0.6633603500154512
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21371581659234246,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_17a87413658040219f21e0db644ac84e.json",
+        "sha256": "fabb3fb20d8cc6c4747ff7088ab42f812fc26aa9c2a19ff595dc5d5d407cc882"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.0005794978405223306,
+      "signed_benefit": -0.0034957810010303736,
+      "signed_loss": -0.002916283160508043,
+      "status": "completed",
+      "value": 0.21022003559131208
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.484898149455138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_039eae3cc7144e0a8c3e92efc0b63a58.json",
+        "sha256": "a35d7fbd59eaa2968bf95a1e8ceb51e87cd91d83d54f3ac93b2f5e78de864dca"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": -0.0008524687128997344,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.0008524687128997344,
+      "status": "completed",
+      "value": 0.484898149455138
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6695331751138127,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_039eae3cc7144e0a8c3e92efc0b63a58.json",
+        "sha256": "a35d7fbd59eaa2968bf95a1e8ceb51e87cd91d83d54f3ac93b2f5e78de864dca"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": -0.001693151156764161,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.001693151156764161,
+      "status": "completed",
+      "value": 0.6695331751138127
+    },
+    {
+      "arm": "observed",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2259345103366791,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_039eae3cc7144e0a8c3e92efc0b63a58.json",
+        "sha256": "a35d7fbd59eaa2968bf95a1e8ceb51e87cd91d83d54f3ac93b2f5e78de864dca"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": -0.0024441492369069173,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.0024441492369069173,
+      "status": "completed",
+      "value": 0.2259345103366791
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.484898149455138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_a532dfdfd1ad4f499f6e60642e3aabcd.json",
+        "sha256": "e40772c13a443752d95c350d62059ea37100467c7db1e92551bfe3815639d666"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.002169783784674695,
+      "signed_benefit": -0.003022252497574429,
+      "signed_loss": -0.0008524687128997344,
+      "status": "completed",
+      "value": 0.48187589695756355
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6695331751138127,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_a532dfdfd1ad4f499f6e60642e3aabcd.json",
+        "sha256": "e40772c13a443752d95c350d62059ea37100467c7db1e92551bfe3815639d666"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.004612088235404155,
+      "signed_benefit": -0.006305239392168316,
+      "signed_loss": -0.001693151156764161,
+      "status": "completed",
+      "value": 0.6632279357216444
+    },
+    {
+      "arm": "rules",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2259345103366791,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_a532dfdfd1ad4f499f6e60642e3aabcd.json",
+        "sha256": "e40772c13a443752d95c350d62059ea37100467c7db1e92551bfe3815639d666"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.010004267092437846,
+      "signed_benefit": -0.012448416329344764,
+      "signed_loss": -0.0024441492369069173,
+      "status": "completed",
+      "value": 0.21348609400733434
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.484898149455138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8689935f74b2444bb32ad9510a780294.json",
+        "sha256": "5098c38d247cc7cdf4f3759886198fabbbfbf9a486f9096bd008bd5019c57b11"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.002169783784674695,
+      "signed_benefit": -0.003022252497574429,
+      "signed_loss": -0.0008524687128997344,
+      "status": "completed",
+      "value": 0.48187589695756355
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6695331751138127,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8689935f74b2444bb32ad9510a780294.json",
+        "sha256": "5098c38d247cc7cdf4f3759886198fabbbfbf9a486f9096bd008bd5019c57b11"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.004612088235404155,
+      "signed_benefit": -0.006305239392168316,
+      "signed_loss": -0.001693151156764161,
+      "status": "completed",
+      "value": 0.6632279357216444
+    },
+    {
+      "arm": "single_llm",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2259345103366791,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_8689935f74b2444bb32ad9510a780294.json",
+        "sha256": "5098c38d247cc7cdf4f3759886198fabbbfbf9a486f9096bd008bd5019c57b11"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.010004267092437846,
+      "signed_benefit": -0.012448416329344764,
+      "signed_loss": -0.0024441492369069173,
+      "status": "completed",
+      "value": 0.21348609400733434
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.484898149455138,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_bb7a4ed4ee2b4a8c92f5c6e3c7bbd6a9.json",
+        "sha256": "24cc0afe4c61671aba8b38003dea3d022ad51e0e31f32203f8a6fbfd8c2c7c4c"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.002169783784674695,
+      "signed_benefit": -0.003022252497574429,
+      "signed_loss": -0.0008524687128997344,
+      "status": "completed",
+      "value": 0.48187589695756355
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6695331751138127,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_bb7a4ed4ee2b4a8c92f5c6e3c7bbd6a9.json",
+        "sha256": "24cc0afe4c61671aba8b38003dea3d022ad51e0e31f32203f8a6fbfd8c2c7c4c"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.004612088235404155,
+      "signed_benefit": -0.006305239392168316,
+      "signed_loss": -0.001693151156764161,
+      "status": "completed",
+      "value": 0.6632279357216444
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C03",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.2259345103366791,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_bb7a4ed4ee2b4a8c92f5c6e3c7bbd6a9.json",
+        "sha256": "24cc0afe4c61671aba8b38003dea3d022ad51e0e31f32203f8a6fbfd8c2c7c4c"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.010004267092437846,
+      "signed_benefit": -0.012448416329344764,
+      "signed_loss": -0.0024441492369069173,
+      "status": "completed",
+      "value": 0.21348609400733434
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.47732081876048343,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_70e0c4012f0948f696576d9faec62d46.json",
+        "sha256": "14f7f2cf18acce8f980e9cb8711ee3fd1ada955fa38bdf4dc4c342b2e24545ab"
+      },
+      "recovery": 0.0,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.007330006854208815,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.007330006854208815,
+      "status": "completed",
+      "value": 0.47732081876048343
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6558101000332768,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_70e0c4012f0948f696576d9faec62d46.json",
+        "sha256": "14f7f2cf18acce8f980e9cb8711ee3fd1ada955fa38bdf4dc4c342b2e24545ab"
+      },
+      "recovery": 0.0,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.00340582815139423,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.00340582815139423,
+      "status": "completed",
+      "value": 0.6558101000332768
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.2081431951347406,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_70e0c4012f0948f696576d9faec62d46.json",
+        "sha256": "14f7f2cf18acce8f980e9cb8711ee3fd1ada955fa38bdf4dc4c342b2e24545ab"
+      },
+      "recovery": 0.0,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0031744281364666227,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0031744281364666227,
+      "status": "completed",
+      "value": 0.2081431951347406
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.47732081876048343,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f79ebd097911483385feedfb068fc1c1.json",
+        "sha256": "b2d7f72dbeefd974ff26b560a6b8f62217dbac7632314728e58061182bbb71ad"
+      },
+      "recovery": 1.4569717859423723,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0033496063231376327,
+      "signed_benefit": 0.010679613177346448,
+      "signed_loss": 0.007330006854208815,
+      "status": "completed",
+      "value": 0.4880004319378299
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6558101000332768,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f79ebd097911483385feedfb068fc1c1.json",
+        "sha256": "b2d7f72dbeefd974ff26b560a6b8f62217dbac7632314728e58061182bbb71ad"
+      },
+      "recovery": 0.31628397099570604,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0023286192991422983,
+      "signed_benefit": 0.0010772088522519319,
+      "signed_loss": 0.00340582815139423,
+      "status": "completed",
+      "value": 0.6568873088855287
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.2081431951347406,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f79ebd097911483385feedfb068fc1c1.json",
+        "sha256": "b2d7f72dbeefd974ff26b560a6b8f62217dbac7632314728e58061182bbb71ad"
+      },
+      "recovery": -0.15851335228302837,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0036776173819595137,
+      "signed_benefit": -0.000503189245492891,
+      "signed_loss": 0.0031744281364666227,
+      "status": "completed",
+      "value": 0.20764000588924772
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.47732081876048343,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_ca641a8314be49208bd33348ef2a409e.json",
+        "sha256": "1ddba8f0cfc9c8fd11cf2e38754ad19605fddd75c6d2bb0917ff779b50869501"
+      },
+      "recovery": 0.9658626280673539,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.00025022717025097174,
+      "signed_benefit": 0.007079779683957843,
+      "signed_loss": 0.007330006854208815,
+      "status": "completed",
+      "value": 0.4844005984444413
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6558101000332768,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_ca641a8314be49208bd33348ef2a409e.json",
+        "sha256": "1ddba8f0cfc9c8fd11cf2e38754ad19605fddd75c6d2bb0917ff779b50869501"
+      },
+      "recovery": 0.1329879738253698,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0029528939663429066,
+      "signed_benefit": 0.00045293418505132355,
+      "signed_loss": 0.00340582815139423,
+      "status": "completed",
+      "value": 0.6562630342183281
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.2081431951347406,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_ca641a8314be49208bd33348ef2a409e.json",
+        "sha256": "1ddba8f0cfc9c8fd11cf2e38754ad19605fddd75c6d2bb0917ff779b50869501"
+      },
+      "recovery": -0.10776688109304829,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.003516526355987648,
+      "signed_benefit": -0.00034209821952102537,
+      "signed_loss": 0.0031744281364666227,
+      "status": "completed",
+      "value": 0.20780109691521959
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.47732081876048343,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dcbcd5c6c415493488dc61775d12210d.json",
+        "sha256": "aaa4e22a11593aef145b8500863ffb114eeec4d6403d6fc932190a2a8ea68beb"
+      },
+      "recovery": 1.4569717859423723,
+      "reference": 0.48465082561469225,
+      "residual_loss": -0.0033496063231376327,
+      "signed_benefit": 0.010679613177346448,
+      "signed_loss": 0.007330006854208815,
+      "status": "completed",
+      "value": 0.4880004319378299
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.6558101000332768,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dcbcd5c6c415493488dc61775d12210d.json",
+        "sha256": "aaa4e22a11593aef145b8500863ffb114eeec4d6403d6fc932190a2a8ea68beb"
+      },
+      "recovery": 0.31628397099570604,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.0023286192991422983,
+      "signed_benefit": 0.0010772088522519319,
+      "signed_loss": 0.00340582815139423,
+      "status": "completed",
+      "value": 0.6568873088855287
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.2081431951347406,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dcbcd5c6c415493488dc61775d12210d.json",
+        "sha256": "aaa4e22a11593aef145b8500863ffb114eeec4d6403d6fc932190a2a8ea68beb"
+      },
+      "recovery": -0.15851335228302837,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.0036776173819595137,
+      "signed_benefit": -0.000503189245492891,
+      "signed_loss": 0.0031744281364666227,
+      "status": "completed",
+      "value": 0.20764000588924772
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c93dc01c5f4b4cd18881b6f6e5f005e5.json",
+        "sha256": "dc05e8b7e16f37936ec0341ca9dc49d89fdaf33eef6d9705168eddb5e3d52286"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6643138784962325,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c93dc01c5f4b4cd18881b6f6e5f005e5.json",
+        "sha256": "dc05e8b7e16f37936ec0341ca9dc49d89fdaf33eef6d9705168eddb5e3d52286"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": -0.000974233900112198,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.000974233900112198,
+      "status": "completed",
+      "value": 0.6643138784962325
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21061747683551746,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c93dc01c5f4b4cd18881b6f6e5f005e5.json",
+        "sha256": "dc05e8b7e16f37936ec0341ca9dc49d89fdaf33eef6d9705168eddb5e3d52286"
+      },
+      "recovery": 0.0,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.00018205659631695403,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.00018205659631695403,
+      "status": "completed",
+      "value": 0.21061747683551746
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0f574d5111b44cbb8463eb431df27fbc.json",
+        "sha256": "8aa7aca07c5098f8300307b04233232415bc0f156f68b0b448bf47019b420f30"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6643138784962325,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0f574d5111b44cbb8463eb431df27fbc.json",
+        "sha256": "8aa7aca07c5098f8300307b04233232415bc0f156f68b0b448bf47019b420f30"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0011493139064798763,
+      "signed_benefit": -0.0021235478065920743,
+      "signed_loss": -0.000974233900112198,
+      "status": "completed",
+      "value": 0.6621903306896404
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21061747683551746,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0f574d5111b44cbb8463eb431df27fbc.json",
+        "sha256": "8aa7aca07c5098f8300307b04233232415bc0f156f68b0b448bf47019b420f30"
+      },
+      "recovery": -30.487462306910768,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.00573250021425456,
+      "signed_benefit": -0.005550443617937606,
+      "signed_loss": 0.00018205659631695403,
+      "status": "completed",
+      "value": 0.20506703321757985
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_44e82a07dc814f3eb95a72ad2826a145.json",
+        "sha256": "dc1adea454daac2cf14b4c3cef89ef0c5798a33afdfd63046ef6b93decee7f0d"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6643138784962325,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_44e82a07dc814f3eb95a72ad2826a145.json",
+        "sha256": "dc1adea454daac2cf14b4c3cef89ef0c5798a33afdfd63046ef6b93decee7f0d"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": -0.0027463919175478857,
+      "signed_benefit": 0.0017721580174356877,
+      "signed_loss": -0.000974233900112198,
+      "status": "completed",
+      "value": 0.6660860365136682
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21061747683551746,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_44e82a07dc814f3eb95a72ad2826a145.json",
+        "sha256": "dc1adea454daac2cf14b4c3cef89ef0c5798a33afdfd63046ef6b93decee7f0d"
+      },
+      "recovery": -6.913002482492689,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.0014406142986102266,
+      "signed_benefit": -0.0012585577022932726,
+      "signed_loss": 0.00018205659631695403,
+      "status": "completed",
+      "value": 0.20935891913322419
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_087b90d8fd114071969a29cb62d6e127.json",
+        "sha256": "ce334e01284dc010630cc81a0b0f3a31ca14147a5102f01cd5a3962557a2a114"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.6643138784962325,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_087b90d8fd114071969a29cb62d6e127.json",
+        "sha256": "ce334e01284dc010630cc81a0b0f3a31ca14147a5102f01cd5a3962557a2a114"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.0011493139064798763,
+      "signed_benefit": -0.0021235478065920743,
+      "signed_loss": -0.000974233900112198,
+      "status": "completed",
+      "value": 0.6621903306896404
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.21061747683551746,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_087b90d8fd114071969a29cb62d6e127.json",
+        "sha256": "ce334e01284dc010630cc81a0b0f3a31ca14147a5102f01cd5a3962557a2a114"
+      },
+      "recovery": -30.487462306910768,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.00573250021425456,
+      "signed_benefit": -0.005550443617937606,
+      "signed_loss": 0.00018205659631695403,
+      "status": "completed",
+      "value": 0.20506703321757985
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48251635465942183,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4a8974869ffa4c7b88bc766c052cb9ff.json",
+        "sha256": "4667763b36758eec1ac5f83bc48e0c5860dddd0bab5f357b2185d64543d29e16"
+      },
+      "recovery": 0.0,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.001529326082816418,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.001529326082816418,
+      "status": "completed",
+      "value": 0.48251635465942183
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6682313940286223,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4a8974869ffa4c7b88bc766c052cb9ff.json",
+        "sha256": "4667763b36758eec1ac5f83bc48e0c5860dddd0bab5f357b2185d64543d29e16"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": -0.0003913700715737489,
+      "signed_benefit": 0.0,
+      "signed_loss": -0.0003913700715737489,
+      "status": "completed",
+      "value": 0.6682313940286223
+    },
+    {
+      "arm": "observed",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.21732494460285773,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_4a8974869ffa4c7b88bc766c052cb9ff.json",
+        "sha256": "4667763b36758eec1ac5f83bc48e0c5860dddd0bab5f357b2185d64543d29e16"
+      },
+      "recovery": 0.0,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.006165416496914461,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.006165416496914461,
+      "status": "completed",
+      "value": 0.21732494460285773
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48251635465942183,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_16952e5dba50491d881a8a150466fd32.json",
+        "sha256": "6863da11d64e508cbf97192614efc5398aaefc46dc92d6c169496763c9d15989"
+      },
+      "recovery": -1.9654592295375586,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.004535154147260467,
+      "signed_benefit": -0.0030058280644440494,
+      "signed_loss": 0.001529326082816418,
+      "status": "completed",
+      "value": 0.4795105265949778
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6682313940286223,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_16952e5dba50491d881a8a150466fd32.json",
+        "sha256": "6863da11d64e508cbf97192614efc5398aaefc46dc92d6c169496763c9d15989"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.005619777073659682,
+      "signed_benefit": -0.006011147145233431,
+      "signed_loss": -0.0003913700715737489,
+      "status": "completed",
+      "value": 0.6622202468833889
+    },
+    {
+      "arm": "rules",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.21732494460285773,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_16952e5dba50491d881a8a150466fd32.json",
+        "sha256": "6863da11d64e508cbf97192614efc5398aaefc46dc92d6c169496763c9d15989"
+      },
+      "recovery": -1.3451183820656176,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.014458631560004709,
+      "signed_benefit": -0.008293215063090248,
+      "signed_loss": 0.006165416496914461,
+      "status": "completed",
+      "value": 0.20903172953976748
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48251635465942183,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f30b228c2f0446409ab3e34b5b5a1ebe.json",
+        "sha256": "a173babcc97d13dae0d6420ca4627f88157959fc43e07e458668aaca1d9bed41"
+      },
+      "recovery": -1.3424523479871062,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.003582373473531242,
+      "signed_benefit": -0.002053047390714824,
+      "signed_loss": 0.001529326082816418,
+      "status": "completed",
+      "value": 0.480463307268707
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6682313940286223,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f30b228c2f0446409ab3e34b5b5a1ebe.json",
+        "sha256": "a173babcc97d13dae0d6420ca4627f88157959fc43e07e458668aaca1d9bed41"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.005788356833231312,
+      "signed_benefit": -0.006179726904805061,
+      "signed_loss": -0.0003913700715737489,
+      "status": "completed",
+      "value": 0.6620516671238172
+    },
+    {
+      "arm": "single_llm",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.21732494460285773,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f30b228c2f0446409ab3e34b5b5a1ebe.json",
+        "sha256": "a173babcc97d13dae0d6420ca4627f88157959fc43e07e458668aaca1d9bed41"
+      },
+      "recovery": -1.1125026085081735,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.013024458432271124,
+      "signed_benefit": -0.006859041935356663,
+      "signed_loss": 0.006165416496914461,
+      "status": "completed",
+      "value": 0.21046590266750106
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.48251635465942183,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_35f92a6214c0436cb0d8c8d59cda4fca.json",
+        "sha256": "f8f4204a3000c6eed03260a1997c0dfda66141033cadf43dc2e1afebaa41fd25"
+      },
+      "recovery": -1.9654592295375586,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.004535154147260467,
+      "signed_benefit": -0.0030058280644440494,
+      "signed_loss": 0.001529326082816418,
+      "status": "completed",
+      "value": 0.4795105265949778
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.6682313940286223,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_35f92a6214c0436cb0d8c8d59cda4fca.json",
+        "sha256": "f8f4204a3000c6eed03260a1997c0dfda66141033cadf43dc2e1afebaa41fd25"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.005619777073659682,
+      "signed_benefit": -0.006011147145233431,
+      "signed_loss": -0.0003913700715737489,
+      "status": "completed",
+      "value": 0.6622202468833889
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C04",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.21732494460285773,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_35f92a6214c0436cb0d8c8d59cda4fca.json",
+        "sha256": "f8f4204a3000c6eed03260a1997c0dfda66141033cadf43dc2e1afebaa41fd25"
+      },
+      "recovery": -1.3451183820656176,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.014458631560004709,
+      "signed_benefit": -0.008293215063090248,
+      "signed_loss": 0.006165416496914461,
+      "status": "completed",
+      "value": 0.20903172953976748
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f51cd579b14449ac9c4608f592cfd6fa.json",
+        "sha256": "7c979573c1c1ebdf04e8c28f31bd85382327b7e297135e3335842af85ce16621"
+      },
+      "recovery": 0.0,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.014842676616640127,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.014842676616640127,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.4888912037129409,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f51cd579b14449ac9c4608f592cfd6fa.json",
+        "sha256": "7c979573c1c1ebdf04e8c28f31bd85382327b7e297135e3335842af85ce16621"
+      },
+      "recovery": 0.0,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.17032472447173008,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.17032472447173008,
+      "status": "completed",
+      "value": 0.4888912037129409
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.11149602941627292,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_f51cd579b14449ac9c4608f592cfd6fa.json",
+        "sha256": "7c979573c1c1ebdf04e8c28f31bd85382327b7e297135e3335842af85ce16621"
+      },
+      "recovery": 0.0,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.09982159385493432,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.09982159385493432,
+      "status": "completed",
+      "value": 0.11149602941627292
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_27f8b050c4594dc0a1ad6a0f5ce3dc69.json",
+        "sha256": "dffa11e1df99a208988851e3091acd47a7f513d32886309f55a2fca83300556d"
+      },
+      "recovery": 0.0,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.014842676616640127,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.014842676616640127,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.4888912037129409,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_27f8b050c4594dc0a1ad6a0f5ce3dc69.json",
+        "sha256": "dffa11e1df99a208988851e3091acd47a7f513d32886309f55a2fca83300556d"
+      },
+      "recovery": 0.0,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.17032472447173008,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.17032472447173008,
+      "status": "completed",
+      "value": 0.4888912037129409
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.11149602941627292,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_27f8b050c4594dc0a1ad6a0f5ce3dc69.json",
+        "sha256": "dffa11e1df99a208988851e3091acd47a7f513d32886309f55a2fca83300556d"
+      },
+      "recovery": 0.0,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.09982159385493432,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.09982159385493432,
+      "status": "completed",
+      "value": 0.11149602941627292
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_6f3962b9dfb243d8ab687eb66d9d932f.json",
+        "sha256": "d1c0042906171a872b978e391e952124bc55534ee2fe8af4cf63977e86a5f170"
+      },
+      "recovery": 0.0,
+      "reference": 0.48465082561469225,
+      "residual_loss": 0.014842676616640127,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.014842676616640127,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.4888912037129409,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_6f3962b9dfb243d8ab687eb66d9d932f.json",
+        "sha256": "d1c0042906171a872b978e391e952124bc55534ee2fe8af4cf63977e86a5f170"
+      },
+      "recovery": 0.0,
+      "reference": 0.659215928184671,
+      "residual_loss": 0.17032472447173008,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.17032472447173008,
+      "status": "completed",
+      "value": 0.4888912037129409
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.11149602941627292,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_6f3962b9dfb243d8ab687eb66d9d932f.json",
+        "sha256": "d1c0042906171a872b978e391e952124bc55534ee2fe8af4cf63977e86a5f170"
+      },
+      "recovery": 0.0,
+      "reference": 0.21131762327120723,
+      "residual_loss": 0.09982159385493432,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.09982159385493432,
+      "status": "completed",
+      "value": 0.11149602941627292
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c9eaa3dc2bc443119e7f3e959260dec6.json",
+        "sha256": "ca6ae36eac38f665bbb4a8d48d07e6e42a1e0c0793ed6ff6dbe86de925a87c44"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.014842676616640127,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": 0.4888912037129409,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c9eaa3dc2bc443119e7f3e959260dec6.json",
+        "sha256": "ca6ae36eac38f665bbb4a8d48d07e6e42a1e0c0793ed6ff6dbe86de925a87c44"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.17032472447173008,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": 0.11149602941627292,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c9eaa3dc2bc443119e7f3e959260dec6.json",
+        "sha256": "ca6ae36eac38f665bbb4a8d48d07e6e42a1e0c0793ed6ff6dbe86de925a87c44"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.09982159385493432,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_7ac7a4861c564dcf91d4282bc3a6e084.json",
+        "sha256": "144f0d6dd7e8d77c30fea2aee517888ef990c116cde2e27ea434a7f6815b772e"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_7ac7a4861c564dcf91d4282bc3a6e084.json",
+        "sha256": "144f0d6dd7e8d77c30fea2aee517888ef990c116cde2e27ea434a7f6815b772e"
+      },
+      "recovery": 0.0,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.16333964459612027,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.16333964459612027,
+      "status": "completed",
+      "value": 0.5
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_7ac7a4861c564dcf91d4282bc3a6e084.json",
+        "sha256": "144f0d6dd7e8d77c30fea2aee517888ef990c116cde2e27ea434a7f6815b772e"
+      },
+      "recovery": 0.0,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.09690924656721438,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.09690924656721438,
+      "status": "completed",
+      "value": 0.11389028686462004
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c6c6a7e018454c8f808b0f48afb97634.json",
+        "sha256": "7a5b2876b25d67a17159454999334120b08813fa9a89d4df727ae7a3ad84ffad"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c6c6a7e018454c8f808b0f48afb97634.json",
+        "sha256": "7a5b2876b25d67a17159454999334120b08813fa9a89d4df727ae7a3ad84ffad"
+      },
+      "recovery": 0.0,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.16333964459612027,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.16333964459612027,
+      "status": "completed",
+      "value": 0.5
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c6c6a7e018454c8f808b0f48afb97634.json",
+        "sha256": "7a5b2876b25d67a17159454999334120b08813fa9a89d4df727ae7a3ad84ffad"
+      },
+      "recovery": 0.0,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.09690924656721438,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.09690924656721438,
+      "status": "completed",
+      "value": 0.11389028686462004
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_efde39afee4e4531b46d3a0bcdd4cdf6.json",
+        "sha256": "862956e992182d975c15dd67846250cadcaa7a0a6192de8354e2ba7751bf2875"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": 0.0,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.0,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_efde39afee4e4531b46d3a0bcdd4cdf6.json",
+        "sha256": "862956e992182d975c15dd67846250cadcaa7a0a6192de8354e2ba7751bf2875"
+      },
+      "recovery": 0.0,
+      "reference": 0.6633396445961203,
+      "residual_loss": 0.16333964459612027,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.16333964459612027,
+      "status": "completed",
+      "value": 0.5
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_efde39afee4e4531b46d3a0bcdd4cdf6.json",
+        "sha256": "862956e992182d975c15dd67846250cadcaa7a0a6192de8354e2ba7751bf2875"
+      },
+      "recovery": 0.0,
+      "reference": 0.2107995334318344,
+      "residual_loss": 0.09690924656721438,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.09690924656721438,
+      "status": "completed",
+      "value": 0.11389028686462004
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_381ca89d759a4a25b8f80e22f47056e7.json",
+        "sha256": "27938a2af5c59d815bbbf168de2cf25c8897eb0b076ffbedc07da7aa24716a33"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.0,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_381ca89d759a4a25b8f80e22f47056e7.json",
+        "sha256": "27938a2af5c59d815bbbf168de2cf25c8897eb0b076ffbedc07da7aa24716a33"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.16333964459612027,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_381ca89d759a4a25b8f80e22f47056e7.json",
+        "sha256": "27938a2af5c59d815bbbf168de2cf25c8897eb0b076ffbedc07da7aa24716a33"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.09690924656721438,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_7f91dc8ef2114c46920c8285a6802875.json",
+        "sha256": "354c6d05a024b9fb21c98fc6946ed3c164c85ab643c1f2ffcc1aa15b6e1c912d"
+      },
+      "recovery": 0.0,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.014237531744186127,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.014237531744186127,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_7f91dc8ef2114c46920c8285a6802875.json",
+        "sha256": "354c6d05a024b9fb21c98fc6946ed3c164c85ab643c1f2ffcc1aa15b6e1c912d"
+      },
+      "recovery": 0.0,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.16784002395704856,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.16784002395704856,
+      "status": "completed",
+      "value": 0.5
+    },
+    {
+      "arm": "observed",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_7f91dc8ef2114c46920c8285a6802875.json",
+        "sha256": "354c6d05a024b9fb21c98fc6946ed3c164c85ab643c1f2ffcc1aa15b6e1c912d"
+      },
+      "recovery": 0.0,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.10960007423515215,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.10960007423515215,
+      "status": "completed",
+      "value": 0.11389028686462004
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3dca4ff174c84106bbd7746bdfe6370c.json",
+        "sha256": "af5e0f503a9ce4de4dd66047268a5bd5c842902f2822de639f36daa9863a0b81"
+      },
+      "recovery": 0.0,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.014237531744186127,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.014237531744186127,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3dca4ff174c84106bbd7746bdfe6370c.json",
+        "sha256": "af5e0f503a9ce4de4dd66047268a5bd5c842902f2822de639f36daa9863a0b81"
+      },
+      "recovery": 0.0,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.16784002395704856,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.16784002395704856,
+      "status": "completed",
+      "value": 0.5
+    },
+    {
+      "arm": "rules",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3dca4ff174c84106bbd7746bdfe6370c.json",
+        "sha256": "af5e0f503a9ce4de4dd66047268a5bd5c842902f2822de639f36daa9863a0b81"
+      },
+      "recovery": 0.0,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.10960007423515215,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.10960007423515215,
+      "status": "completed",
+      "value": 0.11389028686462004
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_ab58a258179849ad91df6183cee08940.json",
+        "sha256": "347a40c734647b50f6952ec13e559d33fba0a231bdff9ac6d6b69e199e345f96"
+      },
+      "recovery": 0.0,
+      "reference": 0.48404568074223825,
+      "residual_loss": 0.014237531744186127,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.014237531744186127,
+      "status": "completed",
+      "value": 0.4698081489980521
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_ab58a258179849ad91df6183cee08940.json",
+        "sha256": "347a40c734647b50f6952ec13e559d33fba0a231bdff9ac6d6b69e199e345f96"
+      },
+      "recovery": 0.0,
+      "reference": 0.6678400239570486,
+      "residual_loss": 0.16784002395704856,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.16784002395704856,
+      "status": "completed",
+      "value": 0.5
+    },
+    {
+      "arm": "single_llm",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_ab58a258179849ad91df6183cee08940.json",
+        "sha256": "347a40c734647b50f6952ec13e559d33fba0a231bdff9ac6d6b69e199e345f96"
+      },
+      "recovery": 0.0,
+      "reference": 0.2234903610997722,
+      "residual_loss": 0.10960007423515215,
+      "signed_benefit": 0.0,
+      "signed_loss": 0.10960007423515215,
+      "status": "completed",
+      "value": 0.11389028686462004
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": 0.4698081489980521,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3f4baa6a71af47f0a15e63e98be0197b.json",
+        "sha256": "cb22691b83f54a55dd3d311d4aa5c2c57cef2d14685bd0cc6e2e83fa9d6ad29a"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.014237531744186127,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": 0.5,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3f4baa6a71af47f0a15e63e98be0197b.json",
+        "sha256": "cb22691b83f54a55dd3d311d4aa5c2c57cef2d14685bd0cc6e2e83fa9d6ad29a"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.16784002395704856,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C05",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": 0.11389028686462004,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_3f4baa6a71af47f0a15e63e98be0197b.json",
+        "sha256": "cb22691b83f54a55dd3d311d4aa5c2c57cef2d14685bd0cc6e2e83fa9d6ad29a"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": 0.10960007423515215,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_32ee4688e4b34e28a6b43e5178c9d269.json",
+        "sha256": "f235ebe2ad0f5d348324e0c1393e64735cacf41ae2a6f3df6e11ff275e95bedf"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_32ee4688e4b34e28a6b43e5178c9d269.json",
+        "sha256": "f235ebe2ad0f5d348324e0c1393e64735cacf41ae2a6f3df6e11ff275e95bedf"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_32ee4688e4b34e28a6b43e5178c9d269.json",
+        "sha256": "f235ebe2ad0f5d348324e0c1393e64735cacf41ae2a6f3df6e11ff275e95bedf"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_128b4bf31eca4b3cbb21c35de84dffbc.json",
+        "sha256": "f0450d164467e5fe40474ff7d71cfdb230dd4b6941d6e33658078e70fa149629"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_128b4bf31eca4b3cbb21c35de84dffbc.json",
+        "sha256": "f0450d164467e5fe40474ff7d71cfdb230dd4b6941d6e33658078e70fa149629"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_128b4bf31eca4b3cbb21c35de84dffbc.json",
+        "sha256": "f0450d164467e5fe40474ff7d71cfdb230dd4b6941d6e33658078e70fa149629"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_51ac6e03b86a4c1794cb2da1721012de.json",
+        "sha256": "3b3f0c8614a912941af52b88aaa24e1f90c8f747f02c08e26dfa4f8238b6c432"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_51ac6e03b86a4c1794cb2da1721012de.json",
+        "sha256": "3b3f0c8614a912941af52b88aaa24e1f90c8f747f02c08e26dfa4f8238b6c432"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_51ac6e03b86a4c1794cb2da1721012de.json",
+        "sha256": "3b3f0c8614a912941af52b88aaa24e1f90c8f747f02c08e26dfa4f8238b6c432"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_16a60ae2c80f47c2871428f5f3bf43d4.json",
+        "sha256": "d8c802f41931ff91a1e0acefe9a533f38c19d4b1c594097e3972188d58284e68"
+      },
+      "recovery": null,
+      "reference": 0.48465082561469225,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_16a60ae2c80f47c2871428f5f3bf43d4.json",
+        "sha256": "d8c802f41931ff91a1e0acefe9a533f38c19d4b1c594097e3972188d58284e68"
+      },
+      "recovery": null,
+      "reference": 0.659215928184671,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "logistic_regression",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_16a60ae2c80f47c2871428f5f3bf43d4.json",
+        "sha256": "d8c802f41931ff91a1e0acefe9a533f38c19d4b1c594097e3972188d58284e68"
+      },
+      "recovery": null,
+      "reference": 0.21131762327120723,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_33889504423f48d0b11bf2faa39310a6.json",
+        "sha256": "ed87cdc80197ae44e2e8a86231a835f3056559e7b2d5dae8e10fdb2f7e2feb0d"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_33889504423f48d0b11bf2faa39310a6.json",
+        "sha256": "ed87cdc80197ae44e2e8a86231a835f3056559e7b2d5dae8e10fdb2f7e2feb0d"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_33889504423f48d0b11bf2faa39310a6.json",
+        "sha256": "ed87cdc80197ae44e2e8a86231a835f3056559e7b2d5dae8e10fdb2f7e2feb0d"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0c4ff91a1a5a44cda12c826b6d38468d.json",
+        "sha256": "8a8da67f7e8131d145beb6c3a103e3e4b5b645dd2c13f1600573890b75516474"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0c4ff91a1a5a44cda12c826b6d38468d.json",
+        "sha256": "8a8da67f7e8131d145beb6c3a103e3e4b5b645dd2c13f1600573890b75516474"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0c4ff91a1a5a44cda12c826b6d38468d.json",
+        "sha256": "8a8da67f7e8131d145beb6c3a103e3e4b5b645dd2c13f1600573890b75516474"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c7ddb417a2fd40519ec2bbd1abee2e8a.json",
+        "sha256": "185aa1a744db5af058f066ca7545883fdafba4bbcd75b64e577caae9af920ea1"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c7ddb417a2fd40519ec2bbd1abee2e8a.json",
+        "sha256": "185aa1a744db5af058f066ca7545883fdafba4bbcd75b64e577caae9af920ea1"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c7ddb417a2fd40519ec2bbd1abee2e8a.json",
+        "sha256": "185aa1a744db5af058f066ca7545883fdafba4bbcd75b64e577caae9af920ea1"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_9acf6b4a3a4b4044bb214bd6d6de94d3.json",
+        "sha256": "7e68fd911579a70d5c913a3bd9dfec88bad5f180e8b18234e67e44ea2a69b153"
+      },
+      "recovery": null,
+      "reference": 0.4698081489980521,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_9acf6b4a3a4b4044bb214bd6d6de94d3.json",
+        "sha256": "7e68fd911579a70d5c913a3bd9dfec88bad5f180e8b18234e67e44ea2a69b153"
+      },
+      "recovery": null,
+      "reference": 0.6633396445961203,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "random_forest",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_9acf6b4a3a4b4044bb214bd6d6de94d3.json",
+        "sha256": "7e68fd911579a70d5c913a3bd9dfec88bad5f180e8b18234e67e44ea2a69b153"
+      },
+      "recovery": null,
+      "reference": 0.2107995334318344,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_2a60e43ba3eb464c9018aaa60397989f.json",
+        "sha256": "d022a383cd5c6345c8483cd7e854ec34e67856423be3486aeb46b799b712a02f"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_2a60e43ba3eb464c9018aaa60397989f.json",
+        "sha256": "d022a383cd5c6345c8483cd7e854ec34e67856423be3486aeb46b799b712a02f"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "observed",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_2a60e43ba3eb464c9018aaa60397989f.json",
+        "sha256": "d022a383cd5c6345c8483cd7e854ec34e67856423be3486aeb46b799b712a02f"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0ef0ca5f4c2e41279122f5a932f271eb.json",
+        "sha256": "1e91864e53669f235ab3bc66a2d7da93d310a7bb14747d32e1a8e737122b093a"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0ef0ca5f4c2e41279122f5a932f271eb.json",
+        "sha256": "1e91864e53669f235ab3bc66a2d7da93d310a7bb14747d32e1a8e737122b093a"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "rules",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_0ef0ca5f4c2e41279122f5a932f271eb.json",
+        "sha256": "1e91864e53669f235ab3bc66a2d7da93d310a7bb14747d32e1a8e737122b093a"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dd5866ad5f5d40dd9764fa704b0b9e70.json",
+        "sha256": "39ad90e285a52d9f3516ad30f5b32c02ff0c0dc63c3b8b2d4beae70461d45647"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dd5866ad5f5d40dd9764fa704b0b9e70.json",
+        "sha256": "39ad90e285a52d9f3516ad30f5b32c02ff0c0dc63c3b8b2d4beae70461d45647"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "single_llm",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_dd5866ad5f5d40dd9764fa704b0b9e70.json",
+        "sha256": "39ad90e285a52d9f3516ad30f5b32c02ff0c0dc63c3b8b2d4beae70461d45647"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "macro_f1",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c0288f4a58a142fd9a1ec57c89699d17.json",
+        "sha256": "ca4bef0038f630ab178b1846b34e77fa378bd3c13eca17e6c94635c641b1e572"
+      },
+      "recovery": null,
+      "reference": 0.48404568074223825,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "roc_auc",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c0288f4a58a142fd9a1ec57c89699d17.json",
+        "sha256": "ca4bef0038f630ab178b1846b34e77fa378bd3c13eca17e6c94635c641b1e572"
+      },
+      "recovery": null,
+      "reference": 0.6678400239570486,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    },
+    {
+      "arm": "multi_agent",
+      "case": "C06",
+      "metric": "average_precision",
+      "model": "xgboost",
+      "observed": null,
+      "record": {
+        "path": "results/raw/readiness_challenge_model_c0288f4a58a142fd9a1ec57c89699d17.json",
+        "sha256": "ca4bef0038f630ab178b1846b34e77fa378bd3c13eca17e6c94635c641b1e572"
+      },
+      "recovery": null,
+      "reference": 0.2234903610997722,
+      "residual_loss": null,
+      "signed_benefit": null,
+      "signed_loss": null,
+      "status": "blocked",
+      "value": null
+    }
+  ],
+  "model_requests": 51,
+  "tool_calls": 132,
+  "claim_boundary": "Six descriptive cases on an already-used patient-disjoint holdout; no independent-population validation, causal role effect, model superiority, clinical deployment readiness or completion of the original matrix."
+}

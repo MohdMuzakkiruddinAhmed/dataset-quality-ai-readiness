@@ -1,0 +1,41 @@
+# Local environments and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.aws/
+credentials*
+*.pem
+*.key
+
+# Acquired data and generated runs
+data/
+acquired_sources/
+artifacts/
+outputs/
+*.joblib
+*.pkl
+*.pickle
+*.zip
+*.log
+.stage*/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,276 @@
+[
+  {
+    "axis": {
+      "unit": "fraction_observed_feature_cells",
+      "value": 0.1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 50596
+      },
+      "unit": "cell"
+    },
+    "effect": {
+      "benefit": -0.0041807797474915365,
+      "loss": -0.0032416996415048915,
+      "reason": "no_positive_loss",
+      "recovery": null
+    },
+    "family": "missing_values",
+    "label": "Missing cells",
+    "pair_id": "71a34d87fb6b33ca5545a43e189db3c591d580e535fa246dc05bec356c3396eb",
+    "scores": {
+      "observed": 0.7920563700795271,
+      "reference": 0.7888146704380222,
+      "repaired": 0.7878755903320356
+    },
+    "source_stage": 29
+  },
+  {
+    "axis": {
+      "unit": "fraction_original_rows_added",
+      "value": 0.1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 3614
+      },
+      "unit": "groups"
+    },
+    "effect": {
+      "benefit": 0.0013991617291231329,
+      "loss": 0.0013991617291231329,
+      "native_control_benefit": 0.0,
+      "reason": null,
+      "recovery": 1.0,
+      "repaired_minus_reference_repaired": 0.0
+    },
+    "family": "exact_duplicates",
+    "label": "Exact duplicates",
+    "pair_id": "fb137d01426660d09d2b84b33623883ecb7c004eda620bdeb77912e3b4b6fc24",
+    "scores": {
+      "observed": 0.7874155087088991,
+      "reference": 0.7888146704380222,
+      "reference_repaired": 0.7888146704380222,
+      "repaired": 0.7888146704380222
+    },
+    "source_stage": 36
+  },
+  {
+    "axis": {
+      "unit": "fraction_observed_declared_numeric_cells",
+      "value": 0.1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 21684
+      },
+      "unit": "cell"
+    },
+    "effect": {
+      "benefit": 0.0,
+      "loss": -0.0013348810593104554,
+      "native_control_benefit": 0.0,
+      "reason": "no_positive_loss",
+      "recovery": null,
+      "repaired_minus_reference_repaired": 0.0013348810593104554
+    },
+    "family": "numeric_type_tokens",
+    "label": "Type tokens",
+    "pair_id": "02543f14edeaaf03f232a41e362e140243712b5dc852a538ce45b9b15bcf6c99",
+    "scores": {
+      "observed": 0.7901495514973327,
+      "reference": 0.7888146704380222,
+      "reference_repaired": 0.7888146704380222,
+      "repaired": 0.7901495514973327
+    },
+    "source_stage": 39
+  },
+  {
+    "axis": {
+      "unit": "fraction_observed_declared_domain_cells",
+      "value": 0.1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 7228
+      },
+      "unit": "cell"
+    },
+    "effect": {
+      "benefit": 0.002944869669268435,
+      "loss": 0.0017975001246143263,
+      "native_control_benefit": 0.0,
+      "reason": null,
+      "recovery": 1.6383140278781843,
+      "repaired_minus_reference_repaired": 0.0011473695446541088
+    },
+    "family": "numeric_domain_negatives",
+    "label": "Numeric domains",
+    "pair_id": "87e04d91ebf255f61bd707327537a796a5cc04b09cad677d2da153d30b1c1aa3",
+    "scores": {
+      "observed": 0.7870171703134079,
+      "reference": 0.7888146704380222,
+      "reference_repaired": 0.7888146704380222,
+      "repaired": 0.7899620399826763
+    },
+    "source_stage": 38
+  },
+  {
+    "axis": {
+      "unit": "fraction_observed_categorical_cells",
+      "value": 0.1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 28912
+      },
+      "unit": "cell"
+    },
+    "effect": {
+      "benefit": -0.00036577306280716204,
+      "loss": -0.00036577306280716204,
+      "native_control_benefit": 0.0,
+      "reason": "no_positive_loss",
+      "recovery": null,
+      "repaired_minus_reference_repaired": 0.0
+    },
+    "family": "categorical_variants",
+    "label": "Category variants",
+    "pair_id": "19b4185709613a3e0e9de2b08b2891e26c3e8bb1dc82767a927047a069ef1175",
+    "scores": {
+      "observed": 0.7891804435008294,
+      "reference": 0.7888146704380222,
+      "reference_repaired": 0.7888146704380222,
+      "repaired": 0.7888146704380222
+    },
+    "source_stage": 37
+  },
+  {
+    "axis": {
+      "unit": "fraction_training_labels",
+      "value": 0.1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 0.06577540106951872,
+        "fn": 3491,
+        "fp": 3,
+        "precision": 0.9761904761904762,
+        "recall": 0.03403431101272828,
+        "tp": 123
+      },
+      "unit": "cell"
+    },
+    "effect": {
+      "benefit": 0.005041639518378105,
+      "loss": 0.006913077908341836,
+      "native_control_benefit": 0.0005394601370406482,
+      "reason": null,
+      "recovery": 0.7292901346149283,
+      "repaired_minus_reference_repaired": -0.0024108985270043792
+    },
+    "family": "binary_label_flips",
+    "label": "Label flips",
+    "pair_id": "029658b0ceab0393b5fa9f6a0ab8e1b9784bc9ffaa15d07c9cf289326556844c",
+    "scores": {
+      "observed": 0.7819015925296804,
+      "reference": 0.7888146704380222,
+      "reference_repaired": 0.7893541305750629,
+      "repaired": 0.7869432320480585
+    },
+    "source_stage": 40
+  },
+  {
+    "axis": {
+      "unit": "added_feature_count",
+      "value": 2
+    },
+    "detection": {
+      "metrics": {
+        "f1": 0.6666666666666666,
+        "fn": 1,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.5,
+        "tp": 1
+      },
+      "unit": "column"
+    },
+    "effect": {
+      "benefit": 0.0,
+      "loss": 0.0006139841548992164,
+      "native_control_benefit": 0.0,
+      "reason": null,
+      "recovery": 0.0,
+      "repaired_minus_reference_repaired": -0.0006139841548992164
+    },
+    "family": "added_irrelevant_features",
+    "label": "Added features",
+    "pair_id": "64aed876bad245f447a9fd68bc29e75da071b9fa408f2446b7246d4a9b1d8236",
+    "scores": {
+      "observed": 0.788200686283123,
+      "reference": 0.7888146704380222,
+      "reference_repaired": 0.7888146704380222,
+      "repaired": 0.788200686283123
+    },
+    "source_stage": 41
+  },
+  {
+    "axis": {
+      "unit": "added_feature_count",
+      "value": 1
+    },
+    "detection": {
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "unit": "column"
+    },
+    "effect": {
+      "benefit": null,
+      "loss": null,
+      "reason": "invalid_observed_score",
+      "recovery": null
+    },
+    "family": "exact_target_encoding",
+    "label": "Target proxy",
+    "pair_id": "ba35f929a14f32ea7ee3a814421a9af1e303411f8e2564808bc8aca4da17936b",
+    "scores": {
+      "observed": 1.0,
+      "reference": 0.7888146704380222,
+      "repaired": 0.7888146704380222
+    },
+    "source_stage": 31
+  }
+]

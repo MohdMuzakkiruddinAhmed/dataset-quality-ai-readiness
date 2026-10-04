@@ -1,0 +1,1595 @@
+[
+  {
+    "pair_id": "0269d70d4852079d582c7470a77aa1fd8e6ba113579f4b8730749ecce8f57cb6",
+    "dataset": "adult",
+    "seed": 43,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8536801328168234,
+        "average_precision": 0.7836441966492366,
+        "balanced_accuracy": 0.7760645499605461,
+        "macro_f1": 0.7918231791911544,
+        "roc_auc": 0.9100804158642224,
+        "weighted_f1": 0.8490078918526105
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8526840066408412,
+        "average_precision": 0.7833786566532084,
+        "balanced_accuracy": 0.7703185095072338,
+        "macro_f1": 0.7882482864485021,
+        "roc_auc": 0.9098264316218853,
+        "weighted_f1": 0.8471118165519772
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 25298
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_ec1260451f1f40fd8065e93df86ba400.json",
+        "sha256": "8b50fd67373065b819a9675bc42c5ab86b54a6a4e6828d5c712fe2da7258d567"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_5a78a90e3f4d45afa14d01d0834d5ba4.json",
+        "sha256": "b67d292aeffdb4df470e4daed377f489e6b3d21e4d8c21078d1612f1ba65d81c"
+      }
+    }
+  },
+  {
+    "pair_id": "10ef6be4d771895e9df1b8f0033e8803f5cc96209478f2342b3ebaed8df471b4",
+    "dataset": "adult",
+    "seed": 44,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8531267293857222,
+        "average_precision": 0.783364353303144,
+        "balanced_accuracy": 0.7762946595527433,
+        "macro_f1": 0.7915005354197602,
+        "roc_auc": 0.9101161457395341,
+        "weighted_f1": 0.8486226977013207
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8516878804648589,
+        "average_precision": 0.7832268935710784,
+        "balanced_accuracy": 0.7693571197096633,
+        "macro_f1": 0.7870032897505426,
+        "roc_auc": 0.909939532440428,
+        "weighted_f1": 0.8461535089757449
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 25298
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_d89cee6349db4c719fc85c986e19b66e.json",
+        "sha256": "c67a38770e2e34003906928a0e41897a99548f9f00fde24d37fb12e494142d23"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_f94e3277f3c44921a0af0259d9011e60.json",
+        "sha256": "caec31df10ea4249ae2079e584c41a14dac7b2a1f29ea9c71feb51918f707c5d"
+      }
+    }
+  },
+  {
+    "pair_id": "9ccd97de2d6dbcd4faa771f878fea2ab54d5eb2734ce4ce30e8a32b4bce6e0fc",
+    "dataset": "adult",
+    "seed": 42,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8533480907581626,
+        "average_precision": 0.7831279534820904,
+        "balanced_accuracy": 0.7761428075826677,
+        "macro_f1": 0.7916010272245206,
+        "roc_auc": 0.9098563816644263,
+        "weighted_f1": 0.8487653989749623
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8516878804648589,
+        "average_precision": 0.7830359699974118,
+        "balanced_accuracy": 0.7692075993766714,
+        "macro_f1": 0.7869286183328715,
+        "roc_auc": 0.9097480097999692,
+        "weighted_f1": 0.8461233423816445
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 25298
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_cdd3eed28027438a82dcf5b294a836b7.json",
+        "sha256": "4ce682ddccda1ee17dced869384bf6c11d14cc8f76ab38e7e78d4cb828a540c5"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_6425a2f888d5403a864c6d62488d5376.json",
+        "sha256": "8b294814f247152b863da4f4b8a7dd698a0ee5411e053ec01f745d30ed7bc035"
+      }
+    }
+  },
+  {
+    "pair_id": "5c03f3105d01dad3d1108d1c8cbac3b6499e5887320e0f01254748c75cc27936",
+    "dataset": "adult",
+    "seed": 43,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8526840066408412,
+        "average_precision": 0.7835067149811535,
+        "balanced_accuracy": 0.778243087155806,
+        "macro_f1": 0.7920756259459775,
+        "roc_auc": 0.909916807188851,
+        "weighted_f1": 0.8486459328963084
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7833464109848287,
+        "balanced_accuracy": 0.7741301121799861,
+        "macro_f1": 0.7902028737538629,
+        "roc_auc": 0.9098625555767044,
+        "weighted_f1": 0.8479496877759041
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 50596
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_003ca4ff97d34e0fb0d6c3af161d62a8.json",
+        "sha256": "d28b3bb56c7f556856bf900a654a76c3cde760e71a9a2f0121a88bc943d82f8c"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_c645a60a326a435b81073f7d1136b2cf.json",
+        "sha256": "50e866deb5b3c530723584063e16a14723091b37c21ba65d90318a74724bff7b"
+      }
+    }
+  },
+  {
+    "pair_id": "71a34d87fb6b33ca5545a43e189db3c591d580e535fa246dc05bec356c3396eb",
+    "dataset": "adult",
+    "seed": 42,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7823811486806583,
+        "balanced_accuracy": 0.7780176408377762,
+        "macro_f1": 0.7920563700795271,
+        "roc_auc": 0.909488771164204,
+        "weighted_f1": 0.8486899065177872
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8526840066408412,
+        "average_precision": 0.7821172214211535,
+        "balanced_accuracy": 0.7695709078422741,
+        "macro_f1": 0.7878755903320356,
+        "roc_auc": 0.9092397785956241,
+        "weighted_f1": 0.8469610367585457
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 50596
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_9bd24055d69d485caa66e949f0ac4f03.json",
+        "sha256": "96293c05949cecf8162d5db02a48a3813cf010d0f96c2f47b06563f1523c7093"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_f2466f441c85486180f28bea4439a92d.json",
+        "sha256": "fec278bbfb7ad7de41b2ff3ac7ad793f36b447e32922692399273692ef4e40ab"
+      }
+    }
+  },
+  {
+    "pair_id": "9363058f6394242297970e9d2dff8f45f03d56e6e569d1ca52f6957b5e511cdb",
+    "dataset": "adult",
+    "seed": 44,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8521306032097399,
+        "average_precision": 0.7831723844575601,
+        "balanced_accuracy": 0.7784731967480034,
+        "macro_f1": 0.7917505995203837,
+        "roc_auc": 0.909948464909256,
+        "weighted_f1": 0.8482583398693331
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8509131156613171,
+        "average_precision": 0.7829077375410569,
+        "balanced_accuracy": 0.768243877942017,
+        "macro_f1": 0.7858530999681951,
+        "roc_auc": 0.909703478815665,
+        "weighted_f1": 0.8453346765647383
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 50596
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_f88538ebd14b49e29b70cf5e0a85694c.json",
+        "sha256": "116d44947cec991479615d414cdca7f06554d74536ded45b4645ffb563026cbb"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_5f9962b681664666b0c8e15e86d0612c.json",
+        "sha256": "e3f63201eb64e75e2eec644902296ec9236434bea47961d566f9f9ba49519cfe"
+      }
+    }
+  },
+  {
+    "pair_id": "10bedb7901886e950b3577c02c752724788d07d36573cf94291509f80b07bc53",
+    "dataset": "adult",
+    "seed": 43,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.853458771444383,
+        "average_precision": 0.7819464834973717,
+        "balanced_accuracy": 0.7865333049070649,
+        "macro_f1": 0.7964662980092445,
+        "roc_auc": 0.9093315991207822,
+        "weighted_f1": 0.8507408705986997
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.854786939679026,
+        "average_precision": 0.7816571204851483,
+        "balanced_accuracy": 0.7778471357710304,
+        "macro_f1": 0.793539609799421,
+        "roc_auc": 0.9092910746114672,
+        "weighted_f1": 0.8502067695112361
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 101192
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_9d9ec86a6d80461e87075da7b2c3b05e.json",
+        "sha256": "4a19c78529380b57807085739a3c6e72b4b18f9f4ac5f41725ab1a54aaad2e8d"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_31d0802df39b4eadb250f26c4aca0938.json",
+        "sha256": "31b407e044224d247fbed610c851a4ca3da4e561f614578e0f7f88697b57aa9c"
+      }
+    }
+  },
+  {
+    "pair_id": "de085a2d13d6a3551802c50053dfdaaf0bcef0df0e80e05bd293fd86cc32df67",
+    "dataset": "adult",
+    "seed": 42,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8540121748754842,
+        "average_precision": 0.7814902713869107,
+        "balanced_accuracy": 0.7888450409757304,
+        "macro_f1": 0.7979238176388174,
+        "roc_auc": 0.909154591742169,
+        "weighted_f1": 0.8515730383317888
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.853458771444383,
+        "average_precision": 0.7812446543711989,
+        "balanced_accuracy": 0.7745716782677106,
+        "macro_f1": 0.7909330364370885,
+        "roc_auc": 0.9091236565008604,
+        "weighted_f1": 0.848548837183539
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 101192
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_ad51621c1cc34d74b53d8026514f3b8c.json",
+        "sha256": "9c6360b0957827f1b59d010d94a3ee052bd07013953ee7c075a5df5d632abf42"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_741f2057b4cb4fdfb6df8297281b8ec3.json",
+        "sha256": "ece6624018e265fe53536749b92887d20a8130d7a1c88160247c653991aa5ba7"
+      }
+    }
+  },
+  {
+    "pair_id": "e04df8d7781359e752abca8743cd6c34037d25e05222f95138ae3ccbd9591315",
+    "dataset": "adult",
+    "seed": 44,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8542335362479248,
+        "average_precision": 0.7824150926351807,
+        "balanced_accuracy": 0.7865999043437677,
+        "macro_f1": 0.7971126905962201,
+        "roc_auc": 0.9097558257101936,
+        "weighted_f1": 0.85136200437432
+      },
+      "reference": {
+        "accuracy": 0.8527946873270614,
+        "average_precision": 0.7834986371828586,
+        "balanced_accuracy": 0.7712892258531394,
+        "macro_f1": 0.7888146704380222,
+        "roc_auc": 0.9101083955092275,
+        "weighted_f1": 0.847391187006652
+      },
+      "repaired": {
+        "accuracy": 0.8523519645821804,
+        "average_precision": 0.7820786262041158,
+        "balanced_accuracy": 0.7703967671293555,
+        "macro_f1": 0.7880312615237773,
+        "roc_auc": 0.9094414159434322,
+        "weighted_f1": 0.846872362794605
+      }
+    },
+    "detection": {
+      "unit": "cell",
+      "metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 101192
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/matrix_assessment_dec15bf87b6744638f8dcd61e21dc6f7.json",
+        "sha256": "c19d842b5526522be665b7292089a0b34db23d3d8ca2defc7d359ec534ea4d7c"
+      },
+      "reference": {
+        "path": "results/raw/adult_baseline_20260930T202640942111Z_63a2e1c1.json",
+        "sha256": "17151bd2fe7e9ac62f4d0af65d0e7307f25a6bc93015b04660ef921ccf1bf436"
+      },
+      "repaired": {
+        "path": "results/raw/matrix_remediation_04e69338c8f24f1cb6db31e07eb31ed0.json",
+        "sha256": "dd165ac4eff04ac6e2b9960e56c454cff21d97ae395e702b931d7fc9b25e392d"
+      }
+    }
+  },
+  {
+    "pair_id": "6fd1a60f0925191d756ceefa449871b4f6100d4c73bd2601a35601396bf1f04b",
+    "dataset": "diabetes",
+    "seed": 42,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8860593860090589,
+        "average_precision": 0.2114773678230893,
+        "balanced_accuracy": 0.5070958726921395,
+        "macro_f1": 0.4855597306841548,
+        "roc_auc": 0.659232392130224,
+        "weighted_f1": 0.8360768828234046
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.20900980004431707,
+        "balanced_accuracy": 0.5085226643151334,
+        "macro_f1": 0.4887485138987985,
+        "roc_auc": 0.6578017354956215,
+        "weighted_f1": 0.8366955869889512
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_severity_20260930T222812275785Z_425416c1.json",
+        "sha256": "42c20f106b2e9302bf524061bd607d9897ded278d70adb03e7f517b4a1c09b30"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_severity_20260930T222831858461Z_8fa2acfd.json",
+        "sha256": "7076f5ff90e69ad2cf00f2de70d745bafffc49a43e3ae316f1326befced31668"
+      }
+    }
+  },
+  {
+    "pair_id": "7ff8e0465c18845106cd7c9ffc208bcaff145b8ea3a33e4b42200141f592feee",
+    "dataset": "diabetes",
+    "seed": 44,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8860593860090589,
+        "average_precision": 0.21075365684160352,
+        "balanced_accuracy": 0.5072884205431792,
+        "macro_f1": 0.48597193656017185,
+        "roc_auc": 0.6594500625567188,
+        "weighted_f1": 0.8361682756556494
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8860090588827378,
+        "average_precision": 0.20818851147425638,
+        "balanced_accuracy": 0.507452570597888,
+        "macro_f1": 0.48636214870947114,
+        "roc_auc": 0.6572872371970926,
+        "weighted_f1": 0.8362327591789528
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_severity_20260930T223035823389Z_d0c13c9e.json",
+        "sha256": "5f54901c42d49827022e03f172d592e44552f15e9d37648d3a221aea6d0233d8"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_severity_20260930T223057302145Z_69157f72.json",
+        "sha256": "967fdd750b5d3a75ebc31e8c47996ed8048c32edda58211e983f42c9e6a416ea"
+      }
+    }
+  },
+  {
+    "pair_id": "e26e710a0062b6b9369c8f75f137142313685b99188a03565f34be78206a473d",
+    "dataset": "diabetes",
+    "seed": 43,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.88610971313538,
+        "average_precision": 0.21099605628564294,
+        "balanced_accuracy": 0.506739174786391,
+        "macro_f1": 0.4847537939238619,
+        "roc_auc": 0.6593780076974466,
+        "weighted_f1": 0.835920197777516
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8857574232511324,
+        "average_precision": 0.2078073267814654,
+        "balanced_accuracy": 0.5076956773183123,
+        "macro_f1": 0.4870746388851892,
+        "roc_auc": 0.6568505912752483,
+        "weighted_f1": 0.8362805210241909
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_severity_20260930T222923483297Z_36799e9f.json",
+        "sha256": "2fdaecfb32d962bdc45800ab38bbcfcea5402f04f318c2168d77107eb927e834"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_severity_20260930T222944793011Z_a852cc0b.json",
+        "sha256": "fcbbb50d6f320f7084e372d8471b952405c895deb70abb13ae9788fc7f3c5a83"
+      }
+    }
+  },
+  {
+    "pair_id": "1fb94317ae99b7fa8df16360a786965de0fdc476ceee18c84af63b5f4632f293",
+    "dataset": "diabetes",
+    "seed": 44,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8859084046300956,
+        "average_precision": 0.2097953995055076,
+        "balanced_accuracy": 0.5075883228562657,
+        "macro_f1": 0.4867298734428385,
+        "roc_auc": 0.6587347342394175,
+        "weighted_f1": 0.8362702137120432
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8859084046300956,
+        "average_precision": 0.20730045469648922,
+        "balanced_accuracy": 0.5077808707073054,
+        "macro_f1": 0.48713945421309696,
+        "roc_auc": 0.6563027886234438,
+        "weighted_f1": 0.8363610040788825
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_missingness_20260930T212320198288Z_82c0a8a2.json",
+        "sha256": "293c05a81b5e7d43ef2c43c301358b718b4201648aeedac7b2eb0a69af4df459"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_missingness_20260930T212342788070Z_df61dca6.json",
+        "sha256": "bda8e6ee0ae2b4c899443a7705f2a8573cab4aae14893b165b8d88a1e437d2f7"
+      }
+    }
+  },
+  {
+    "pair_id": "2f0574fb40227053535f1708b6535a6bf39cba747a961bd128aff93567773589",
+    "dataset": "diabetes",
+    "seed": 42,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.88610971313538,
+        "average_precision": 0.21032599727804852,
+        "balanced_accuracy": 0.5063540790843115,
+        "macro_f1": 0.48392405624505547,
+        "roc_auc": 0.6587931862656261,
+        "weighted_f1": 0.8357361946251444
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8860593860090589,
+        "average_precision": 0.20766494069091287,
+        "balanced_accuracy": 0.5086362555004574,
+        "macro_f1": 0.4888376836639743,
+        "roc_auc": 0.6560499566303032,
+        "weighted_f1": 0.836803532075882
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_missingness_20260930T212044807637Z_2a9d3f53.json",
+        "sha256": "c1c2b8f424b048d0797f8d50776ecc4af7412c453e54f869f2529a7c1214348f"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_missingness_20260930T212107199409Z_4993104f.json",
+        "sha256": "1d1b07159e6a1585fcd8ba0adf4a3653749f505f0cd166d46063722661e8b92a"
+      }
+    }
+  },
+  {
+    "pair_id": "7d0f0e04182e17d0f454b28f685ef70916e2cbdd175c4fb9ccd8b9b8dc1183bf",
+    "dataset": "diabetes",
+    "seed": 43,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8860090588827378,
+        "average_precision": 0.20983085280369845,
+        "balanced_accuracy": 0.5057196399385303,
+        "macro_f1": 0.48263461695973237,
+        "roc_auc": 0.6590896376754907,
+        "weighted_f1": 0.8354062007081847
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8860090588827378,
+        "average_precision": 0.20755151881859815,
+        "balanced_accuracy": 0.5084153098530866,
+        "macro_f1": 0.48840825479483374,
+        "roc_auc": 0.657140391853449,
+        "weighted_f1": 0.8366863125629903
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_missingness_20260930T212201892178Z_15d514ec.json",
+        "sha256": "1c7ca4deb2b4724ba87a00cd3eac6a46d397b3e275d4c0c709210646daed3d2f"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_missingness_20260930T212224696119Z_c696529e.json",
+        "sha256": "211d9816595cf95dc443e6dbe99bd4be1f7b06eeaaa6de7ae5fcf8a1b716f7b2"
+      }
+    }
+  },
+  {
+    "pair_id": "81398c7c0f2a0b28d1a3c9bd437120270106a945d3fb9590e34e6e9d7d93f7da",
+    "dataset": "diabetes",
+    "seed": 43,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8862103673880222,
+        "average_precision": 0.20910755644696466,
+        "balanced_accuracy": 0.506795970379053,
+        "macro_f1": 0.4847950144803843,
+        "roc_auc": 0.6580630002413624,
+        "weighted_f1": 0.8359733698606681
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8862103673880222,
+        "average_precision": 0.20615092521261685,
+        "balanced_accuracy": 0.5089139967404902,
+        "macro_f1": 0.4893117280755493,
+        "roc_auc": 0.6550947215210197,
+        "weighted_f1": 0.8369747252560359
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_severity_20260930T223328802640Z_a5926e12.json",
+        "sha256": "82517eb783e27a74dc5fe6dab08e47c8805eaf63844932b4dea0a8e9d2f0c653"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_severity_20260930T223355485654Z_a58af9ce.json",
+        "sha256": "a8492c83f195d7d03144f92698fb5bf1b3abaf4e908a30d5a6289eba757f3334"
+      }
+    }
+  },
+  {
+    "pair_id": "b4090adef4ae59ebee1b9e293049ef14f2b9cd797eaeb780ed3823dc55348292",
+    "dataset": "diabetes",
+    "seed": 44,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.8863110216406643,
+        "average_precision": 0.21009138930178792,
+        "balanced_accuracy": 0.5083931487800329,
+        "macro_f1": 0.4881323141897526,
+        "roc_auc": 0.6594457708879846,
+        "weighted_f1": 0.8367573690899972
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.8860090588827378,
+        "average_precision": 0.20698132074958536,
+        "balanced_accuracy": 0.5091855012572456,
+        "macro_f1": 0.49003260771316226,
+        "roc_auc": 0.6557051423803769,
+        "weighted_f1": 0.8370462959161417
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_severity_20260930T223458221455Z_3f577c2a.json",
+        "sha256": "bacdda0a9fb3897ac181dd2dd8249c788b26b11eb1e3233005fc1c7d6ae4e859"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_severity_20260930T223523081210Z_3ea74423.json",
+        "sha256": "45df5431fc271642483497854298e44f01992ae88af8ab4647ed84c05d30afec"
+      }
+    }
+  },
+  {
+    "pair_id": "cdf80c507a416cfb7af0124307b56066d5b794495e4093f8bda59046c6431d00",
+    "dataset": "diabetes",
+    "seed": 42,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.88610971313538,
+        "average_precision": 0.20954301126372465,
+        "balanced_accuracy": 0.5061615312332718,
+        "macro_f1": 0.483508113267703,
+        "roc_auc": 0.659658446916362,
+        "weighted_f1": 0.8356439479806732
+      },
+      "reference": {
+        "accuracy": 0.8858580775037745,
+        "average_precision": 0.21131762327120723,
+        "balanced_accuracy": 0.5065971858047359,
+        "macro_f1": 0.48465082561469225,
+        "roc_auc": 0.659215928184671,
+        "weighted_f1": 0.835787266008605
+      },
+      "repaired": {
+        "accuracy": 0.886160040261701,
+        "average_precision": 0.206020512876532,
+        "balanced_accuracy": 0.5085005032420796,
+        "macro_f1": 0.4884746746484724,
+        "roc_auc": 0.6559779017710312,
+        "weighted_f1": 0.8367671546695558
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/diabetes_severity_20260930T223156058221Z_04666b4d.json",
+        "sha256": "2a7d41ef2100fb6f071912d8d804af9d204fa9fd51453512bb4829e6169f0033"
+      },
+      "reference": {
+        "path": "results/raw/diabetes_missingness_20260930T211918536233Z_496bebe8.json",
+        "sha256": "2c7122bf16c61d9524852c44cac113f052b129e73b3217a9b83a711ce1bf701c"
+      },
+      "repaired": {
+        "path": "results/raw/diabetes_severity_20260930T223223496491Z_0f4b33b5.json",
+        "sha256": "e0ab2a7ca47e013971444f651df09e8fc576f14f44c0537c39d863005f3fc1dc"
+      }
+    }
+  },
+  {
+    "pair_id": "5d42f600de4e1a53e46eacd505eb54715e4d92ce33bfd17eb74c1a556043a412",
+    "dataset": "steel",
+    "seed": 44,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7207446808510638,
+        "average_precision_macro": 0.6629597301664534,
+        "balanced_accuracy": 0.6503601044962132,
+        "log_loss": 0.5813876554760972,
+        "macro_f1": 0.6495284386858545,
+        "roc_auc_ovr_macro": 0.8702966066595179,
+        "weighted_f1": 0.722978403474875
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7208603145235892,
+        "average_precision_macro": 0.6633299541708061,
+        "balanced_accuracy": 0.6507395823347074,
+        "log_loss": 0.5811843264941257,
+        "macro_f1": 0.6497614062779649,
+        "roc_auc_ovr_macro": 0.8705006901186693,
+        "weighted_f1": 0.7227891990706742
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_severity_20260930T223704167316Z_94a8604d.json",
+        "sha256": "aff3721f4f6eaf71eddf24d230efb9525be9f8b99d0d6148b740cf72d4fd62ec"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_severity_20260930T223706200252Z_ec2e01ac.json",
+        "sha256": "0d269c893bd0b469b7d6454e020c1f9f33edc9f973d5649ceb695cc63a8e4bb7"
+      }
+    }
+  },
+  {
+    "pair_id": "88ab9e55f3d7cc271b85f08d06f1ceef0baddf40074d2ac51d559d75a60b9790",
+    "dataset": "steel",
+    "seed": 42,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7224791859389454,
+        "average_precision_macro": 0.6628043709575404,
+        "balanced_accuracy": 0.6531787260729236,
+        "log_loss": 0.5809477791569985,
+        "macro_f1": 0.6521881017876382,
+        "roc_auc_ovr_macro": 0.8703428291891616,
+        "weighted_f1": 0.7251529737102473
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7202821461609621,
+        "average_precision_macro": 0.6628630536912054,
+        "balanced_accuracy": 0.6504971658997221,
+        "log_loss": 0.5810416931034507,
+        "macro_f1": 0.649391245842189,
+        "roc_auc_ovr_macro": 0.8704348623757826,
+        "weighted_f1": 0.7224723338903503
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_severity_20260930T223648229844Z_70098c69.json",
+        "sha256": "6425e6a79a9fc009fa9100ce3a80977a70316456f5c346c4d7216fed63c159f8"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_severity_20260930T223650195318Z_4617b8c6.json",
+        "sha256": "d8ae905658b89d0921b8e0472edb40d22d4d41536c703cae9b567be7b1bc0a2f"
+      }
+    }
+  },
+  {
+    "pair_id": "f8899e667cef378a1a662136d601188165f272db0222382ddac3373d5b543976",
+    "dataset": "steel",
+    "seed": 43,
+    "severity": 0.05,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.72236355226642,
+        "average_precision_macro": 0.6629930622097517,
+        "balanced_accuracy": 0.651838320471032,
+        "log_loss": 0.5815681213162305,
+        "macro_f1": 0.6512361510462922,
+        "roc_auc_ovr_macro": 0.8701742748145781,
+        "weighted_f1": 0.7248397803057487
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7202821461609621,
+        "average_precision_macro": 0.6627842483693128,
+        "balanced_accuracy": 0.6494920489406576,
+        "log_loss": 0.5816367096078203,
+        "macro_f1": 0.6487614280686363,
+        "roc_auc_ovr_macro": 0.8702011212140741,
+        "weighted_f1": 0.7224227076336539
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_severity_20260930T223656071157Z_4b0a0af5.json",
+        "sha256": "81aa9f98756cb5f53c95f3d95af86a0ebaf6c118cf883279557a7d1a22c0f03b"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_severity_20260930T223658155164Z_63b3165d.json",
+        "sha256": "03eeece44bc8cd1c79ca2f4cfad277489cf11781784bc47fee4fa88cb05d9813"
+      }
+    }
+  },
+  {
+    "pair_id": "59bb260cadfa48d98c32a0eac3f9f5e81199f7856378b63f15a970607f749d88",
+    "dataset": "steel",
+    "seed": 42,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7212072155411656,
+        "average_precision_macro": 0.6612074224922782,
+        "balanced_accuracy": 0.6519077249704407,
+        "log_loss": 0.5866098306780876,
+        "macro_f1": 0.6511832114278642,
+        "roc_auc_ovr_macro": 0.8686149742399039,
+        "weighted_f1": 0.7249026351819576
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7203977798334875,
+        "average_precision_macro": 0.6612758395171464,
+        "balanced_accuracy": 0.6505952808934906,
+        "log_loss": 0.5865597240939221,
+        "macro_f1": 0.6498868019314737,
+        "roc_auc_ovr_macro": 0.8687259033329374,
+        "weighted_f1": 0.7236358907617721
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_missingness_20260930T220226952635Z_7bbfcf7e.json",
+        "sha256": "ab3ceb11ccb183bba4385e8d3e6317fd7acb8f8839dc304e81607d14ced7bf76"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_missingness_20260930T220233160973Z_2e395237.json",
+        "sha256": "5fcabeff2c4a0bfb9feaf3f7f1e697c89a8b4691543c585250eed1f055cfbe84"
+      }
+    }
+  },
+  {
+    "pair_id": "8391fb69cdd6ec1e1550180786c8a76132750f37741c6746296364dab79833ae",
+    "dataset": "steel",
+    "seed": 43,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7236355226641998,
+        "average_precision_macro": 0.6612527165644865,
+        "balanced_accuracy": 0.6534124045313648,
+        "log_loss": 0.5874609350947214,
+        "macro_f1": 0.6529255103650421,
+        "roc_auc_ovr_macro": 0.8686009721822422,
+        "weighted_f1": 0.7267576402730784
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.723404255319149,
+        "average_precision_macro": 0.6620958258989048,
+        "balanced_accuracy": 0.6526459591601955,
+        "log_loss": 0.586616622926502,
+        "macro_f1": 0.652060162494002,
+        "roc_auc_ovr_macro": 0.8689053388807276,
+        "weighted_f1": 0.7262852027114249
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_missingness_20260930T220247177203Z_b5b9609b.json",
+        "sha256": "cc6a7b203aafbcb421ff0a09200601d621d272841b277607520c9e8ca4b8d4cb"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_missingness_20260930T220249555443Z_4c3d8ab9.json",
+        "sha256": "d059e952e0fb26508bb585151e9cf7e5acde87bea229b0b8b25abc7b7ae1f58e"
+      }
+    }
+  },
+  {
+    "pair_id": "851037db0b9ba6d366a5fa57808471f2e5d903b26b1f58b8c0e987f83c5518d8",
+    "dataset": "steel",
+    "seed": 44,
+    "severity": 0.1,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7250231267345051,
+        "average_precision_macro": 0.661449989159645,
+        "balanced_accuracy": 0.6553135385709264,
+        "log_loss": 0.5857870593461058,
+        "macro_f1": 0.6547168463623654,
+        "roc_auc_ovr_macro": 0.8691800207744688,
+        "weighted_f1": 0.7280265569070475
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7235198889916744,
+        "average_precision_macro": 0.661961171992029,
+        "balanced_accuracy": 0.6544145256127568,
+        "log_loss": 0.5851145230316012,
+        "macro_f1": 0.6535943911967744,
+        "roc_auc_ovr_macro": 0.8694636263624016,
+        "weighted_f1": 0.7263924672665913
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_missingness_20260930T220256795220Z_c3f1766b.json",
+        "sha256": "60e653833ee18a01c402568518a25d2cda92d4287325ad98719a5c3325e9d97f"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_missingness_20260930T220259122900Z_0910423d.json",
+        "sha256": "30788f85e0e0794074981a507cd90bbeedbc15308aa65377e8eb660ca1420687"
+      }
+    }
+  },
+  {
+    "pair_id": "14a5937d7071cd80a9d68346c9803e52e621ba63be7ac8b54112a81b6c64ccd9",
+    "dataset": "steel",
+    "seed": 42,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7169287696577243,
+        "average_precision_macro": 0.6596362567769514,
+        "balanced_accuracy": 0.6513207826031381,
+        "log_loss": 0.593410218360743,
+        "macro_f1": 0.6502192363808669,
+        "roc_auc_ovr_macro": 0.8669475559205998,
+        "weighted_f1": 0.7222465953790415
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7154255319148937,
+        "average_precision_macro": 0.6596593204889935,
+        "balanced_accuracy": 0.6488793919566677,
+        "log_loss": 0.592663488851383,
+        "macro_f1": 0.6478416433837703,
+        "roc_auc_ovr_macro": 0.8671727264589807,
+        "weighted_f1": 0.7206131211924612
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_severity_20260930T223712561718Z_3e28a7d8.json",
+        "sha256": "ef796c37c1cfc17f4efd4170aaafcf2023b3e4088047d7cf67904a323f5b41e5"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_severity_20260930T223714686006Z_be1bb153.json",
+        "sha256": "abca6c5740c21ce94fed373987707be29608ff8695b1a9bf5eecd48b37499297"
+      }
+    }
+  },
+  {
+    "pair_id": "19803e7a20b5a593292dd33f8eb2d56ee052970e16288fa1c0a8aae8e73dee95",
+    "dataset": "steel",
+    "seed": 43,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7185476410730804,
+        "average_precision_macro": 0.660443646105687,
+        "balanced_accuracy": 0.650963274534241,
+        "log_loss": 0.5938024546255815,
+        "macro_f1": 0.6501312003093404,
+        "roc_auc_ovr_macro": 0.8671740627645831,
+        "weighted_f1": 0.7230079612981706
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.7198196114708603,
+        "average_precision_macro": 0.6603398700819293,
+        "balanced_accuracy": 0.6519646466462148,
+        "log_loss": 0.5932010233408839,
+        "macro_f1": 0.6511618143926196,
+        "roc_auc_ovr_macro": 0.8673600900230648,
+        "weighted_f1": 0.7240436808564089
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_severity_20260930T223720860975Z_9e84acd6.json",
+        "sha256": "c794aeaeebb32a5d45cac804159455ee105d96821c3bf23d940f637d5000b0d8"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_severity_20260930T223722961178Z_1abff2c7.json",
+        "sha256": "e093359bbf34a2beb74fc2c5f1aa2a1290c0468bef717d92b61b91b178ece330"
+      }
+    }
+  },
+  {
+    "pair_id": "dbdec645d1371e966b6124be1619511016cd1c668642c13ccb04d20e8985cc7c",
+    "dataset": "steel",
+    "seed": 44,
+    "severity": 0.2,
+    "model": "logistic_regression",
+    "method": "rules",
+    "protocol": "task_specific_median_mode",
+    "scores": {
+      "observed": {
+        "accuracy": 0.7201665124884367,
+        "average_precision_macro": 0.6604712115091752,
+        "balanced_accuracy": 0.6524105331064455,
+        "log_loss": 0.5920466334523531,
+        "macro_f1": 0.651514716570028,
+        "roc_auc_ovr_macro": 0.8677281948187021,
+        "weighted_f1": 0.7243827661615878
+      },
+      "reference": {
+        "accuracy": 0.7158880666049954,
+        "average_precision_macro": 0.6622650194539886,
+        "balanced_accuracy": 0.6486829123126578,
+        "log_loss": 0.5765994772293882,
+        "macro_f1": 0.6450691345844654,
+        "roc_auc_ovr_macro": 0.8725780497526157,
+        "weighted_f1": 0.7169351783088708
+      },
+      "repaired": {
+        "accuracy": 0.719472710453284,
+        "average_precision_macro": 0.6612718813020445,
+        "balanced_accuracy": 0.652406039289937,
+        "log_loss": 0.5903345475023539,
+        "macro_f1": 0.6514446044043724,
+        "roc_auc_ovr_macro": 0.8682360419181824,
+        "weighted_f1": 0.7239143143749079
+      }
+    },
+    "detection": {
+      "unit": "observed_missing_cells",
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "source_records": {
+      "observed": {
+        "path": "results/raw/steel_severity_20260930T223729146901Z_a6bf99cb.json",
+        "sha256": "a181e367aad9ae1dad2d74fe6d8812ec70fa81b053b058aabb1cae80857a364c"
+      },
+      "reference": {
+        "path": "results/raw/steel_missingness_20260930T220150750277Z_fa04f5f9.json",
+        "sha256": "f9654deb62828c0b508b11780371f2818dbeb2000440946927de34ce64e27ee3"
+      },
+      "repaired": {
+        "path": "results/raw/steel_severity_20260930T223731200048Z_16e96203.json",
+        "sha256": "db92281365e6acc8e915083245935298d40ec96c70e09ebf899ea6aaad5f2515"
+      }
+    }
+  }
+]

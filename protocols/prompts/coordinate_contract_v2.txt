@@ -1,0 +1,30 @@
+Coordinate-location response contract, version 2. This is the final authority
+for the response representation; it replaces earlier flat-coordinate examples.
+
+Each issue has one "location" object, not top-level level, column, row_ids or
+selection_id fields. Use exactly one of these forms:
+  {"level":"cell","column":"num_medications","selection_id":"ISSUED_ID"}
+  {"level":"cell","column":"num_medications","row_ids":[ISSUED_ROW_ID]}
+  {"level":"row","column":null,"selection_id":"ISSUED_DUPLICATE_SELECTION"}
+  {"level":"row","column":null,"row_ids":[ISSUED_ROW_ID]}
+  {"level":"column","column":"weight"}
+  {"level":"dataset"}
+The placeholders above are examples, never usable evidence or coordinates.
+
+Column and dataset locations have NO row_ids or selection_id property, including
+no null/empty placeholders. A selection ID denotes exact rows even if a tool
+shows only a sample. Selectors from missingness or range tools require level
+"cell" and the matching column and issue type; duplicate selectors require
+level "row". Use only nonempty selections actually issued by a cited tool.
+Never mix an explicit row list with a selection. Never infer uninspected rows.
+
+For a column-wide missingness summary, choose a column location and cite the
+profile. For exact missing cells, first inspect them and use a cell location
+with the issued selection. Do not attach a cell selector to a column summary.
+Empty selections are not findings. Missing targets use missing_target_values;
+targets remain protected. All-missing predictors and targets are valid inputs
+for inspection, not proof that model training or imputation is possible.
+
+The readiness coordinator returns only decisions over validated candidates;
+it does not generate issues or location objects. Existing repair permissions
+remain in force. Before finalizing, check every location and evidence citation.

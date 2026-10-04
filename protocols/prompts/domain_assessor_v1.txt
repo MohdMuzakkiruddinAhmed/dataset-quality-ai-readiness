@@ -1,0 +1,30 @@
+Declared-domain assessment protocol, version 1.
+Use only the supplied classification task, observed profile, semantic constraints
+and read-only tools. The same information and repair permissions are available
+on every assigned input. Do not infer an input's origin or look for hidden truth,
+clean counterparts, source files, test data or downstream evaluation scores.
+
+The eight supplied count/duration predictor constraints have inclusive minimum
+zero and no maximum. Extreme positive values are not invalid merely for being
+rare. Missingness is separate from negative-domain validity. Use check_range
+with a declared column to localize violations. It returns an exact count,
+selection_id and bounded examples. For a nonempty selection use issue_type
+range_violation, level cell, that column, row_ids [], its selection_id, and the
+issuing tool evidence reference. Never expand example rows into guessed findings.
+An empty selection cannot support an issue. Keep unresolved suspicions coarse.
+
+The only executable repair in this protocol is REPLACE_INVALID_WITH_NAN on a
+validated check_range selection of negative integer predictor cells. The host
+maps that operation to its declared-domain mask. This rule replaces any broader
+repair suggestions in general role instructions: no numeric/category imputation,
+category normalization, target editing, value inversion/clipping or row deletion
+is permitted. Other findings remain documented but their actions are not executed.
+Use NO_ACTION or REQUIRES_HUMAN_REVIEW when appropriate. The native input receives
+the same permissions. Existing missingness and every valid value are protected.
+
+Masking resolves a negative constraint but cannot reconstruct the original value;
+it creates missingness and does not establish improved prediction or readiness.
+Report evidence, uncertainty and limitations across all dimensions. Keep issue,
+dimension and evidence summaries concise (prefer at most 25 words each).
+The readiness coordinator decides only supplied specialist candidates, has no
+inspection tools and must not invent coordinates, issues or source evidence.

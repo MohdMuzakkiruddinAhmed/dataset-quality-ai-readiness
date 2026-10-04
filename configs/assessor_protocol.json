@@ -1,0 +1,34 @@
+{
+  "model": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "provider": "bedrock",
+  "region": "us-east-1",
+  "temperature": 0.0,
+  "limits": {
+    "max_elapsed_seconds": 900,
+    "max_issues": 100,
+    "max_model_calls": 10,
+    "max_output_tokens": 10000,
+    "max_request_bytes": 180000,
+    "max_response_bytes": 120000,
+    "max_tool_calls": 24,
+    "max_tool_output_bytes": 16000,
+    "max_tool_rows": 5,
+    "max_total_tokens": 400000,
+    "timeout_seconds": 180,
+    "transport_retries": 0,
+    "validation_retries": 0
+  },
+  "single_max_model_calls": 4,
+  "multi_agent": {
+    "coordinator_input_reservation": 110000,
+    "coordinator_max_model_calls": 1,
+    "coordinator_max_output_tokens": 6000,
+    "specialist_max_model_calls": 3,
+    "specialist_max_tool_calls": 16,
+    "specialist_tool_budgets": {
+      "metadata_ml": 4,
+      "quality": 14,
+      "schema": 6
+    }
+  }
+}

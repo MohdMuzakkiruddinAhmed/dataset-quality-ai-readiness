@@ -1,0 +1,4 @@
+# Keep checksummed research artifacts byte-identical across platforms.
+* -text
+*.pdf binary
+*.png binary

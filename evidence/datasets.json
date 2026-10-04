@@ -1,0 +1,87 @@
+[
+  {
+    "categorical": 8,
+    "classes": [
+      "<=50K",
+      ">50K"
+    ],
+    "dataset": "adult",
+    "evidence": {
+      "test": {
+        "path": "data/reference/adult/complete_cases_v1/split_seed42_folds5_test0/test.csv",
+        "sha256": "ade53f60c27fde0498bae96c9a15c1dfa1a8d99d94680402d339ee98b2ddcb23"
+      },
+      "train": {
+        "path": "data/reference/adult/complete_cases_v1/split_seed42_folds5_test0/train.csv",
+        "sha256": "270edacd83b611dec034ca778a268344db504813c80a3a5b8b382de48bda2112"
+      }
+    },
+    "features": 14,
+    "numeric": 6,
+    "reference_missing_predictor_cells": 0,
+    "rows": 45175,
+    "split": "Feature-group-disjoint, stratified fold 0/5; seed 42",
+    "target": "income",
+    "test_missing_predictor_cells": 0,
+    "test_rows": 9035,
+    "train_missing_predictor_cells": 0,
+    "train_rows": 36140
+  },
+  {
+    "categorical": 39,
+    "classes": [
+      "EARLY",
+      "NOT_EARLY"
+    ],
+    "dataset": "diabetes",
+    "evidence": {
+      "test": {
+        "path": "data/reference/diabetes/eligible_encounters_natural_missing_v1/patient_seed42_folds5_test0/test.csv",
+        "sha256": "2c445d0cfd54cd9e406fbab76898ec3684c135018d8ab2db0ead727b41c413ac"
+      },
+      "train": {
+        "path": "data/reference/diabetes/eligible_encounters_natural_missing_v1/patient_seed42_folds5_test0/train.csv",
+        "sha256": "3974ba0b39b3d27b242e2d1008bc07d33fbe3982cb7c7134f54a19d5116509db"
+      }
+    },
+    "features": 47,
+    "numeric": 8,
+    "reference_missing_predictor_cells": 188261,
+    "rows": 99343,
+    "split": "Patient-disjoint, stratified fold 0/5; seed 42",
+    "target": "readmitted_30d",
+    "test_missing_predictor_cells": 37486,
+    "test_rows": 19870,
+    "train_missing_predictor_cells": 150775,
+    "train_rows": 79473
+  },
+  {
+    "categorical": 2,
+    "classes": [
+      "Light_Load",
+      "Maximum_Load",
+      "Medium_Load"
+    ],
+    "dataset": "steel",
+    "evidence": {
+      "test": {
+        "path": "data/reference/steel/steel_within_day_lag15_v1/test.csv",
+        "sha256": "2b92635ac8663c07487cf63ef80e3d4ab00c8ae41fe5fff590239b24fb7813ac"
+      },
+      "train": {
+        "path": "data/reference/steel/steel_within_day_lag15_v1/train.csv",
+        "sha256": "3d9e3fe767c3ab28ff520f9a743a62b7bbe0bdffc85b3fc65cb82d2d71e86e8b"
+      }
+    },
+    "features": 8,
+    "numeric": 6,
+    "reference_missing_predictor_cells": 0,
+    "rows": 34310,
+    "split": "Jan-Sep 2018 train; Oct-Dec 2018 test",
+    "target": "Load_Type",
+    "test_missing_predictor_cells": 0,
+    "test_rows": 8648,
+    "train_missing_predictor_cells": 0,
+    "train_rows": 25662
+  }
+]

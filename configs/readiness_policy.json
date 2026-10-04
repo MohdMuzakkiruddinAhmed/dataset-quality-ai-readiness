@@ -1,0 +1,88 @@
+{
+  "version": "readiness_challenge_v1",
+  "cases": [
+    {
+      "family": "native",
+      "id": "C01",
+      "seed": null,
+      "severity": 0
+    },
+    {
+      "family": "predictor_missingness",
+      "id": "C02",
+      "seed": 2001,
+      "severity": 0.05
+    },
+    {
+      "family": "numeric_domain_negatives",
+      "id": "C03",
+      "seed": 2001,
+      "severity": 0.1
+    },
+    {
+      "family": "numeric_domain_negatives",
+      "id": "C04",
+      "seed": 2002,
+      "severity": 0.2
+    },
+    {
+      "family": "all_predictors_missing",
+      "id": "C05",
+      "seed": 2001,
+      "severity": 1
+    },
+    {
+      "family": "all_training_targets_missing",
+      "id": "C06",
+      "seed": 2001,
+      "severity": 1
+    }
+  ],
+  "methods": [
+    "rules",
+    "single_llm",
+    "multi_agent"
+  ],
+  "policy": {
+    "all_missing": "All predictors or all targets masked; no sampling draw at 100 percent; seed identifies case only.",
+    "categorical_empty_fallback": "__MISSING__",
+    "categorical_tie": "Lexicographically smallest string among modes.",
+    "class_coverage": "At least two distinct determinate cases in each of READY, REMEDIATE, NOT_READY; otherwise inconclusive without replacements.",
+    "critical": "Unusable target, any declared numeric violation, or all predictor cells missing.",
+    "domain_eligibility": "Observed strictly positive integer cells in the eight declared numeric predictors; zero excluded because exact arithmetic negation cannot make zero negative.",
+    "domain_operation": "Exact arithmetic negation x -> -x; no inverse repair.",
+    "epsilon": 1e-12,
+    "label_tolerance": 0.02,
+    "minimum_recovery": 0.5,
+    "missing_eligibility": "Observed nonmissing predictor cells, including categorical and numeric values; native missing cells excluded.",
+    "numeric_donors": "All nonmissing nonnegative values in the same observed training column after approved masks; unapproved negatives never donors.",
+    "numeric_empty_fallback": 0.0,
+    "protected": "All targets, row IDs/order, column order, and every predictor outside approved coordinates; numerical dtype promotion changes representation only.",
+    "repair": "Mask supported negative numeric cells first; then fill only supported original missing cells and those newly masked cells with train-only nonnegative numeric median or categorical mode.",
+    "rules_readiness": "NOT_READY for unusable targets or all predictors missing; REMEDIATE for any predictor missingness or declared numeric violation; READY otherwise. No canonical scores consulted.",
+    "sampling": "Sorted row IDs, task column order, row-major eligible coordinates; numpy default_rng(seed).choice without replacement, sorted selected offsets; floor(rate * eligible_count).",
+    "scalar": "Existing task_suitability is categorical; correlation not estimable; no substitute scalar or manufactured probability vector.",
+    "serialization": "UTF-8 LF CSV with row_id; empty alone denotes missing; observation numerics nullable Int64; repaired numerics nullable Float64; literal None category retained.",
+    "severe_loss": 0.1,
+    "version": "readiness_challenge_v1"
+  },
+  "profile": {
+    "category_limit": 5,
+    "rare_category_threshold": 0.01,
+    "sample_seed": 17,
+    "sample_size": 2
+  },
+  "single_max_model_calls": 4,
+  "multi_agent": {
+    "coordinator_input_reservation": 110000,
+    "coordinator_max_model_calls": 1,
+    "coordinator_max_output_tokens": 6000,
+    "specialist_max_model_calls": 3,
+    "specialist_max_tool_calls": 16,
+    "specialist_tool_budgets": {
+      "metadata_ml": 4,
+      "quality": 14,
+      "schema": 6
+    }
+  }
+}

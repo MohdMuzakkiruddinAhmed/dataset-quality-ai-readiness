@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=78"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataset-readiness"
+version = "0.1.0"
+description = "Deterministic dataset-quality tools and offline research evidence for ML readiness"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  {name = "Muzakkiruddin Ahmed Mohammed"},
+  {name = "John Talburt"},
+  {name = "Abdelrahman Elfikky"},
+]
+dependencies = [
+  "numpy==2.4.3",
+  "pandas==2.3.3",
+  "scikit-learn==1.8.0",
+  "xgboost==3.2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.2"]
+figures = ["matplotlib==3.10.8"]
+
+[project.urls]
+Repository = "https://github.com/MohdMuzakkiruddinAhmed/dataset-quality-ai-readiness"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+filterwarnings = ["error::sklearn.exceptions.ConvergenceWarning"]

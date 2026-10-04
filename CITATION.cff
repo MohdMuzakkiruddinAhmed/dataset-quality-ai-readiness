@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and record the repository commit used."
+type: software
+title: "Dataset Quality and AI Readiness"
+authors:
+  - family-names: Mohammed
+    given-names: Muzakkiruddin Ahmed
+  - family-names: Talburt
+    given-names: John
+  - family-names: Elfikky
+    given-names: Abdelrahman
+version: 0.1.0
+date-released: 2026-10-04
+license: MIT
+repository-code: "https://github.com/MohdMuzakkiruddinAhmed/dataset-quality-ai-readiness"
+abstract: "Deterministic research components and saved evidence for Evaluating Dataset Quality and Machine Learning Readiness with Tool-Grounded Agents."
+keywords:
+  - data quality
+  - machine learning
+  - dataset readiness
+  - reproducible research

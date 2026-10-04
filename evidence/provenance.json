@@ -1,0 +1,22 @@
+{
+  "description": "Selected unchanged scientific values projected from the original research archive. Archive-relative source identifiers are provenance, not bundled-file links.",
+  "sources": [
+    {
+      "archive_path": "results/analysis/stage49_delivery_data.json",
+      "sha256": "fd1ff8d73c3e73e3b87b91740a77180cd233d3c3f37b38cdd08202555edba2ea"
+    },
+    {
+      "archive_path": "results/analysis/stage48_synthesis.json",
+      "sha256": "a5154712e8a61c6b121d6334dc38aba4b23f8a639770679ea61e3b495b364bc6"
+    },
+    {
+      "archive_path": "results/analysis/stage47_readiness_challenge.json",
+      "sha256": "5aa75c730cbc7e3c6ddb455bfaf1e194df03b811c9d58cbe127bb59a89800542"
+    },
+    {
+      "archive_path": "configs/matrices/readiness_challenge_v1.json",
+      "sha256": "020520e0a9dcb534425df347d5e20c21b77fbb06ef21a42d99db3035f5210f77"
+    }
+  ],
+  "scope": "Saved aggregate measurements and protocols; original row-level records, full transcripts, model checkpoints and held-out predictions are outside this compact package."
+}
